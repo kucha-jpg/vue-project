@@ -1,7 +1,7 @@
 <template>
   <div class="topic-detail">
     <NavBar />
-    <div class="topic-header" style="background-image: url('/images/hong.jpeg')">
+    <div class="topic-header" style="background-image: url('/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun3.png')">
       <button class="back-button" @click="goBack">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
           <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
@@ -29,18 +29,19 @@
           <div v-if="activeTab === 0" class="region-content">
             <h2 class="region-title">潮汕地区红色文化</h2>
             <div class="culture-item">
-              <img src="/images/hong.jpeg" alt="潮汕红色文化" class="culture-image">
+              <img src="/yuecunwenmai1/images/红色文化/潮汕地区/潮汕铁路旧址公园.png" alt="潮汕铁路旧址公园" class="culture-image">
               <div class="culture-text">
-                <h3>潮汕革命根据地</h3>
-                <p>潮汕地区是广东省重要的革命老区，早在大革命时期就建立了党组织。1927年南昌起义军南下广东，部分部队进入潮汕地区，建立了红色政权。潮汕人民在党的领导下，开展了艰苦卓绝的革命斗争。</p>
-                <p>著名的革命遗址包括：八一南昌起义南下部队指挥部旧址、大南山革命根据地、红场革命烈士纪念碑等。</p>
+                <h3>潮汕铁路旧址公园</h3>
+                <p>潮汕铁路是中国近代史上第一条由华侨投资兴建的纯商办铁路，建于1904年，全长42.1公里。1939年日军入侵潮汕时被破坏，现存部分路基和桥梁遗址。潮汕铁路旧址公园展示了潮汕人民反抗帝国主义侵略的历史见证。</p>
+                <p>公园内保存了部分铁路遗迹，并建有纪念馆展示潮汕铁路的历史沿革和革命斗争事迹。</p>
               </div>
             </div>
             <div class="culture-item reverse">
-              <img src="/images/hong.jpeg" alt="潮汕红色文化" class="culture-image">
+              <img src="/yuecunwenmai1/images/红色文化/潮汕地区/桂园旧陈列馆.png" alt="桂园旧陈列馆" class="culture-image">
               <div class="culture-text">
-                <h3>革命英雄人物</h3>
-                <p>潮汕地区涌现了许多革命英雄人物，如彭湃、杨石魂、方方等。彭湃是中国共产党早期农民运动领导人之一，被誉为"农民运动大王"。杨石魂是潮汕地区党组织创始人之一，为革命事业献出了年轻的生命。</p>
+                <h3>桂园旧陈列馆</h3>
+                <p>桂园始建于1923年，是一座典型的潮汕民居建筑。1925年，东征军总指挥蒋介石和政治部主任周恩来曾在此居住和办公。1927年南昌起义军南下广东时，周恩来等起义军领导人再次入住桂园。</p>
+                <p>如今桂园已辟为陈列馆，展示南昌起义军在潮汕的活动史迹，是重要的爱国主义教育基地。</p>
               </div>
             </div>
           </div>
@@ -49,19 +50,27 @@
           <div v-if="activeTab === 1" class="region-content">
             <h2 class="region-title">广府地区红色文化</h2>
             <div class="culture-item">
-              <img src="/images/hong.jpeg" alt="广府红色文化" class="culture-image">
+              <img src="/yuecunwenmai1/images/红色文化/广府地区/广州起义纪念馆.png" alt="广州起义纪念馆" class="culture-image">
               <div class="culture-text">
-                <h3>广州起义</h3>
-                <p>1927年12月11日，中国共产党在广州领导工人、农民和革命士兵举行了广州起义，建立了中国第一个城市苏维埃政权——广州苏维埃政府。虽然起义最终失败，但它是中国共产党领导城市革命的一次伟大尝试。</p>
-                <p>主要遗址包括：广州起义纪念馆、广州起义烈士陵园、黄埔军校旧址等。</p>
+                <h3>广州起义纪念馆</h3>
+                <p>广州起义纪念馆原为国民党广东省会公安局，1927年12月11日广州起义后成为广州苏维埃政府所在地。起义期间，这里张贴了第一张苏维埃政府布告，颁布了实行社会改革的纲领。</p>
+                <p>纪念馆内保存了起义领导人的办公室、会议室等革命遗址，并陈列了大量珍贵历史文物和图片资料。</p>
               </div>
             </div>
             <div class="culture-item reverse">
-              <img src="/images/hong.jpeg" alt="广府红色文化" class="culture-image">
+              <img src="/yuecunwenmai1/images/红色文化/广府地区/孙中山大元帅府纪念馆.png" alt="孙中山大元帅府纪念馆" class="culture-image">
               <div class="culture-text">
-                <h3>珠江三角洲抗日根据地</h3>
-                <p>抗日战争时期，珠江三角洲地区建立了广泛的抗日根据地。东江纵队是这一地区的主要抗日武装力量，开展了艰苦卓绝的游击战争，为抗日战争胜利作出了重要贡献。</p>
-                <p>著名景点：东江纵队纪念馆、中山烈士陵园、顺德革命烈士纪念碑等。</p>
+                <h3>孙中山大元帅府纪念馆</h3>
+                <p>孙中山大元帅府前身为广东士敏土厂，1917年和1923年孙中山两次在此建立革命政权。大元帅府见证了孙中山领导护法运动和国民革命运动的重要历史时刻。</p>
+                <p>纪念馆通过大量历史照片、文物和场景复原，生动展现了孙中山在广州的革命活动历程。</p>
+              </div>
+            </div>
+            <div class="culture-item">
+              <img src="/yuecunwenmai1/images/红色文化/广府地区/辛亥革命纪念馆.png" alt="辛亥革命纪念馆" class="culture-image">
+              <div class="culture-text">
+                <h3>辛亥革命纪念馆</h3>
+                <p>辛亥革命纪念馆是为纪念孙中山领导的辛亥革命活动而建的专题纪念馆，位于广州黄埔区长洲岛。纪念馆通过大量珍贵文物和历史资料，全面展示了辛亥革命的历史进程。</p>
+                <p>馆内常设"辛亥革命时期广东名人展"、"伟大的历程——辛亥革命展"等基本陈列，是了解辛亥革命历史的重要场所。</p>
               </div>
             </div>
           </div>
@@ -70,18 +79,27 @@
           <div v-if="activeTab === 2" class="region-content">
             <h2 class="region-title">客家地区红色文化</h2>
             <div class="culture-item">
-              <img src="/images/hong.jpeg" alt="客家红色文化" class="culture-image">
+              <img src="/yuecunwenmai1/images/红色文化/客家地区/梅州平远县仁居镇红军街.png" alt="梅州平远县仁居镇红军街" class="culture-image">
               <div class="culture-text">
-                <h3>中央苏区南方屏障</h3>
-                <p>梅州、河源等客家地区是中央苏区的重要组成部分，被称为"南方屏障"。这里建立了完善的苏维埃政权，开展了土地革命，为中央红军提供了重要的战略支撑。</p>
-                <p>主要遗址：梅县革命烈士纪念碑、三河坝战役纪念园、阮啸仙故居等。</p>
+                <h3>梅州平远县仁居镇红军街</h3>
+                <p>仁居镇红军街是红四军在平远开展革命活动的重要遗址。1929年和1930年，红四军三次进入平远，在仁居镇建立了苏维埃政权，开展了土地革命斗争。</p>
+                <p>红军街保留了当年的红军标语、革命委员会旧址等遗迹，是平远县重要的爱国主义教育基地。</p>
               </div>
             </div>
             <div class="culture-item reverse">
-              <img src="/images/hong.jpeg" alt="客家红色文化" class="culture-image">
+              <img src="/yuecunwenmai1/images/红色文化/客家地区/梅州平远县仁居镇红军街2.png" alt="梅州平远县仁居镇红军街2" class="culture-image">
               <div class="culture-text">
-                <h3>革命英雄人物</h3>
-                <p>客家地区涌现了许多革命英雄人物，如叶剑英、阮啸仙、古大存等。叶剑英是中国人民解放军的创建者之一，长期担任党和国家重要领导职务。阮啸仙是广东青年运动先驱，曾任中共广东省委书记。</p>
+                <h3>红军标语墙</h3>
+                <p>在仁居镇红军街的墙壁上，至今仍保留着多条红军书写的标语，如"红军是为劳苦工农谋利益的先锋队"、"只有苏维埃才能救中国"等。这些标语是研究红四军历史和宣传工作的重要实物资料。</p>
+                <p>标语墙见证了当年红军与当地群众的鱼水情深，是革命传统教育的生动教材。</p>
+              </div>
+            </div>
+            <div class="culture-item">
+              <img src="/yuecunwenmai1/images/红色文化/客家地区/梅州平远县仁居镇红军街3.png" alt="梅州平远县仁居镇红军街3" class="culture-image">
+              <div class="culture-text">
+                <h3>革命旧址群</h3>
+                <p>仁居镇红军街周边分布着多个革命旧址，包括平远县革命委员会旧址、红军兵工厂旧址、红军医院旧址等。这些旧址完整保留了当年的建筑风貌，展现了红军在艰苦条件下坚持斗争的革命精神。</p>
+                <p>近年来，当地政府对这些旧址进行了保护性修缮，并建立了完善的展示体系。</p>
               </div>
             </div>
           </div>

@@ -11,12 +11,12 @@ const routes = [
     path: '/villages',
     name: 'Villages',
     component: () => import('@/views/VillagesView.vue'),
-    meta: { title: '村落列表' }
+    meta: { title: '村落详情' }
   },
   {
     path: '/village/:id',
     name: 'VillageDetail',
-    component: () => import('@/views/detail/ChaozhouGuchenView.vue'),
+    component: () => import('@/views/VillageDetailLayout.vue'),
     props: true,
     meta: { title: '村落详情' }
   },
@@ -69,6 +69,36 @@ const routes = [
     meta: { title: '展览展示' }
   },
   {
+    path: '/exhibitions/1',
+    name: 'Exhibition1',
+    component: () => import('@/views/exhibitions/Exhibition1.vue'),
+    meta: { title: '展览1详情' }
+  },
+  {
+    path: '/exhibitions/2',
+    name: 'Exhibition2',
+    component: () => import('@/views/exhibitions/Exhibition2.vue'),
+    meta: { title: '展览2详情' }
+  },
+  {
+    path: '/exhibitions/3',
+    name: 'Exhibition3',
+    component: () => import('@/views/exhibitions/Exhibition3.vue'),
+    meta: { title: '展览3详情' }
+  },
+  {
+    path: '/exhibitions/4',
+    name: 'Exhibition4',
+    component: () => import('@/views/exhibitions/Exhibition4.vue'),
+    meta: { title: '展览4详情' }
+  },
+  {
+    path: '/exhibitions/5',
+    name: 'Exhibition5',
+    component: () => import('@/views/exhibitions/Exhibition5.vue'),
+    meta: { title: '展览5详情' }
+  },
+  {
     path: '/activities',
     name: 'Activities',
     component: () => import('@/views/ActivitiesView.vue'),
@@ -91,29 +121,6 @@ const routes = [
     name: 'NotFound',
     component: () => import('@/views/NotFoundView.vue'),
     meta: { title: '页面未找到' }
-  },
-  // 更新展览详情路由，使用动态导入
-  {
-    path: '/exhibitions/:id',
-    name: 'ExhibitionDetail',
-    component: () => import('@/views/exhibitions/Exhibition1.vue'), // 默认加载Exhibition1.vue
-    props: (route) => {
-      // 根据id动态选择组件
-      const exhibitionId = parseInt(route.params.id);
-      const componentMap = {
-        1: () => import('@/views/exhibitions/Exhibition1.vue'),
-        2: () => import('@/views/exhibitions/Exhibition2.vue'),
-        3: () => import('@/views/exhibitions/Exhibition3.vue'),
-        4: () => import('@/views/exhibitions/Exhibition4.vue'),
-        5: () => import('@/views/exhibitions/Exhibition5.vue')
-      };
-
-      return {
-        default: componentMap[exhibitionId] || componentMap[1], // 默认加载Exhibition1.vue
-        component: componentMap[exhibitionId] || componentMap[1]
-      };
-    },
-    meta: { title: '展览详情' }
   }
 ]
 
@@ -121,18 +128,15 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
   scrollBehavior(to, from, savedPosition) {
-    // 滚动到顶部
     return savedPosition || { top: 0 }
   }
 })
 
-// 全局前置守卫
 router.beforeEach((to, from, next) => {
-  // 设置页面标题
   if (to.meta.title) {
-    document.title = `${to.meta.title} - 潮州文化数据库`
+    document.title = `${to.meta.title} `
   } else {
-    document.title = '潮州文化数据库'
+    document.title = ''
   }
   next()
 })

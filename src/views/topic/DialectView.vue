@@ -1,69 +1,80 @@
 <template>
-  <div class="topic-detail">
+  <div class="dialect-overview">
     <NavBar />
-    <div class="topic-header" style="background-image: url('/images/dialect-bg.jpg')">
-      <button class="back-button" @click="goBack">
+    <div class="page-header">
+      <button class="back-btn" @click="goBack">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
           <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
         </svg>
         返回
       </button>
-      <h1>广东方言音律</h1>
-      <p>聆听岭南各地的方言歌谣，感受独特的语音魅力</p>
+      <h1 class="main-title">广东方言音律</h1>
+      <p class="subtitle">探寻语音密码，传承千年文化基因</p>
     </div>
-    <div class="topic-content">
-      <!-- 地区导航标签 -->
-      <div class="region-tabs">
-        <button
-          v-for="region in regions"
-          :key="region.id"
-          :class="{ active: activeRegion === region.id }"
-          @click="activeRegion = region.id"
-        >
-          {{ region.name }}
-        </button>
-      </div>
 
-      <!-- 地区内容区域 -->
-      <div class="region-content">
-        <!-- 潮汕方言 -->
-        <div v-if="activeRegion === 'chaoshan'" class="region-section">
-          <h2>潮汕方言</h2>
-          <div class="dialect-card">
-            <div class="dialect-text">
-              <h3>潮汕方言特点</h3>
-              <p>潮汕话属于闽南语系，保留了古汉语的许多特征，如完整的八声调系统。潮汕方言中保留了大量的古汉语词汇和语法结构，是研究汉语发展史的重要资料。</p>
-              <p>潮汕地区有着丰富的民歌资源，如潮州歌册、潮剧等，这些艺术形式中蕴含着独特的潮汕方言音律美感。</p>
-            </div>
+    <div class="content-container">
+      <!-- 潮汕方言 -->
+      <section class="dialect-section" id="chaoshan">
+        <h2 class="section-title">潮汕方言</h2>
+        <div class="dialect-content">
+          <div class="content-block">
+            <h3 class="block-title">方言概况</h3>
+            <p>潮汕话（又称潮州话）是汉语闽南语系的重要分支，主要通行于广东潮汕地区及海外潮人社群，使用人口约2500万。</p>
+            <p>其语音保留大量古汉语特征，如八声调系统、"文白异读"现象，词汇中融合古越语、马来语等外来元素。潮汕话以复杂的连读变调、丰富的俗谚著称，被誉为"中国最难懂方言"之一。</p>
+          </div>
+          <div class="content-block">
+            <h3 class="block-title">文化价值</h3>
+            <p>作为潮汕文化的核心载体，其独特的"唐音遗韵"成为联结全球潮汕人的身份密码。童谣《天顶飞雁鹅》等口头文学更被列入非物质文化遗产，展现了潮汕方言深厚的文化积淀。</p>
           </div>
         </div>
+      </section>
 
-        <!-- 广府方言 -->
-        <div v-if="activeRegion === 'guangfu'" class="region-section">
-          <h2>广府方言</h2>
-          <div class="dialect-card">
-            <div class="dialect-text">
-              <h3>广府话特点</h3>
-              <p>粤语是广东最主要的方言，俗称"白话"，使用人口占广东省的大部分。粤语有完整的九声六调，保留了较多古汉语的特征。</p>
-              <p>广东音乐和粤剧是广府方言音律的重要载体，如《雨打芭蕉》、《平湖秋月》等经典曲目，展现了粤语独特的韵律美感。</p>
-              <p>粤语歌曲更是华语流行音乐的重要组成部分，影响了整个华语乐坛的发展。</p>
-            </div>
+      <!-- 广府方言 -->
+      <section class="dialect-section" id="guangfu">
+        <h2 class="section-title">广府方言</h2>
+        <div class="dialect-content">
+          <div class="content-block">
+            <h3 class="block-title">方言概况</h3>
+            <p>粤语是汉藏语系汉语族的重要语言，主要通行于中国广东、广西、香港、澳门及海外华人社区，全球使用人数超过8000万。</p>
+            <p>作为岭南文化的核心载体，粤语保留了大量古汉语特征，如完整的九声六调系统、丰富的入声字和古词汇（如"食饭""行街"），被誉为"中国古代语言的活化石"。</p>
+          </div>
+          <div class="content-block">
+            <h3 class="block-title">文化影响</h3>
+            <p>粤语不仅是日常交流工具，更是广府文化的艺术媒介。粤剧、粤曲、粤语流行音乐（如Beyond、张国荣的作品）均以粤语演绎，成为全球华人的文化记忆。</p>
+            <p>香港电影和TVB剧集通过粤语传播，使"港式粤语"风靡亚洲。粤语歇后语、俗语（如"食碗面反碗底"）生动反映广府人的处世哲学。</p>
+          </div>
+          <div class="content-block">
+            <h3 class="block-title">现代传承</h3>
+            <p>随着时代发展，粤语在坚持传统的同时不断吸收外来语（如英语词汇"巴士""士多"），展现出强大的包容性。</p>
+            <p>尽管面临普通话推广的挑战，粤语仍通过教育、媒体和网络（如粤语表情包、YouTube频道）焕发新生，成为联结粤港澳及海外华人的重要文化纽带。</p>
+            <p>2009年，粤剧被列入联合国非遗名录，进一步肯定了粤语的文化价值。</p>
           </div>
         </div>
+      </section>
 
-        <!-- 客家方言 -->
-        <div v-if="activeRegion === 'hakka'" class="region-section">
-          <h2>客家方言</h2>
-          <div class="dialect-card">
-            <div class="dialect-text">
-              <h3>客家话特点</h3>
-              <p>客家话保留了较多古汉语的语音特点，如完整的入声系统。客家方言分布广泛，主要分布在粤东、粤北地区。</p>
-              <p>客家山歌是客家方言音律的代表，其歌词通俗易懂，旋律优美，反映了客家人的生活情感和历史记忆。</p>
-              <p>客家方言中保留了许多古汉语词汇，如"食"(吃)、"行"(走)等，是研究汉语演变的重要资料。</p>
-            </div>
+      <!-- 客家方言 -->
+      <section class="dialect-section" id="hakka">
+        <h2 class="section-title">客家方言</h2>
+        <div class="dialect-content">
+          <div class="content-block">
+            <h3 class="block-title">方言概况</h3>
+            <p>客家话是汉藏语系汉语族的重要方言，主要分布在中国广东、福建、江西、台湾等客家聚居区，以及东南亚、欧美等海外客家人社区，全球使用人口约5000万。</p>
+            <p>作为客家文化的核心载体，客家话保留了中古汉语的语音特点，如六声调系统、丰富的鼻化韵和古语词汇（如"食朝""行田"），被誉为"古汉语的活化石"。</p>
+          </div>
+          <div class="content-block">
+            <h3 class="block-title">文化传承</h3>
+            <p>客家话不仅是客家人日常交流的工具，更是客家文化传承的重要媒介。客家山歌、采茶戏、谚语等民间艺术均以客家话演绎，展现了客家人勤劳、团结的精神特质。</p>
+            <p>客家童谣《月光光》和民间故事《客家围龙屋的传说》等，通过口耳相传，成为客家文化的重要组成部分。</p>
+          </div>
+          <div class="content-block">
+            <h3 class="block-title">精神内核</h3>
+            <p>客家话中独特的俗语和谚语（如"宁卖祖宗田，莫忘祖宗言"）深刻反映了客家人重视传统、不忘根本的价值观。</p>
+            <p>随着时代变迁，客家话在保持传统的同时，也吸收了周边方言和现代词汇，展现出强大的适应力。</p>
+            <p>尽管面临普通话推广的挑战，客家话仍通过教育、文化活动（如世界客属恳亲大会）和媒体（如客家电视台）得以传承和发展。</p>
+            <p>2011年，客家山歌被列入国家级非物质文化遗产名录，进一步彰显了客家话的文化价值。</p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </template>
@@ -72,20 +83,8 @@
 import NavBar from '@/components/NavBar.vue'
 
 export default {
-  name: 'DialectView',
-  components: {
-    NavBar
-  },
-  data() {
-    return {
-      activeRegion: 'chaoshan', // 默认显示潮汕
-      regions: [
-        { id: 'chaoshan', name: '潮汕方言' },
-        { id: 'guangfu', name: '广府方言' },
-        { id: 'hakka', name: '客家方言' }
-      ]
-    }
-  },
+  name: 'DialectOverview',
+  components: { NavBar },
   methods: {
     goBack() {
       this.$router.go(-1);
@@ -95,51 +94,26 @@ export default {
 </script>
 
 <style scoped>
-.topic-detail {
-  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
-  background-color: #f8f9fa;
+.dialect-overview {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.8;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-.topic-header {
-  height: 350px;
-  background-size: cover;
-  background-position: center;
+.page-header {
+  height: 300px;
+  background: linear-gradient(135deg, #1a2a6c, #3a7bd5);
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  position: relative;
   text-align: center;
-  position: relative;
 }
 
-.topic-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.topic-header h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 2;
-  font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.topic-header p {
-  font-size: 24px;
-  position: relative;
-  z-index: 2;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.back-button {
+.back-btn {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -153,119 +127,98 @@ export default {
   align-items: center;
   gap: 8px;
   transition: all 0.3s ease;
-  z-index: 3;
 }
 
-.back-button:hover {
+.back-btn:hover {
   background: rgba(255, 255, 255, 0.3);
 }
 
-.topic-content {
-  padding: 60px 50px;
-  max-width: 1200px;
+.main-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.content-container {
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 40px 20px;
 }
 
-/* 地区标签样式 */
-.region-tabs {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  border-bottom: 1px solid #e9ecef;
-}
-
-.region-tabs button {
-  padding: 12px 24px;
-  margin: 0 10px;
-  background: none;
-  border: none;
-  border-bottom: 2px solid transparent;
-  font-size: 18px;
-  color: #495057;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.region-tabs button:hover {
-  color: #007bff;
-}
-
-.region-tabs button.active {
-  border-bottom-color: #007bff;
-  color: #007bff;
-  font-weight: 500;
-}
-
-/* 地区内容样式 */
-.region-section {
+.dialect-section {
   margin-bottom: 60px;
-}
-
-.region-section h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
-  color: #343a40;
-  text-align: center;
-}
-
-.dialect-card {
-  display: flex;
-  flex-direction: column;
   background: white;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-.dialect-text {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   padding: 30px;
 }
 
-.dialect-text h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  color: #495057;
+.section-title {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #3498db;
+  text-align: center;
 }
 
-.dialect-text p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #6c757d;
+.dialect-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content-block {
+  padding: 20px;
+  border-left: 4px solid #3498db;
+  background-color: #f8f9fa;
+  border-radius: 0 4px 4px 0;
+}
+
+.block-title {
+  font-size: 1.3rem;
+  color: #2980b9;
   margin-bottom: 15px;
 }
 
-/* 响应式调整 */
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
 @media (max-width: 768px) {
-  .topic-content {
-    padding: 40px 20px;
-  }
-
-  .topic-header {
+  .page-header {
     height: 250px;
+    padding: 0 20px;
   }
 
-  .topic-header h1 {
-    font-size: 36px;
+  .main-title {
+    font-size: 2rem;
   }
 
-  .topic-header p {
-    font-size: 18px;
+  .subtitle {
+    font-size: 1rem;
   }
 
-  .region-tabs button {
-    padding: 8px 16px;
-    margin: 0 5px;
-    font-size: 16px;
+  .dialect-section {
+    padding: 20px;
+    margin-bottom: 40px;
   }
 
-  .region-section h2 {
-    font-size: 28px;
+  .section-title {
+    font-size: 1.5rem;
     margin-bottom: 20px;
   }
 
-  .dialect-text {
-    padding: 20px;
+  .content-block {
+    padding: 15px;
   }
 }
 </style>

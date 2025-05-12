@@ -4,7 +4,7 @@
     <div class="hero">
       <div class="hero-content">
         <h1>广东传统村落</h1>
-        <p>探索岭南文化的千年传承</p>
+        <p>探索千年文化传承</p>
       </div>
     </div>
 
@@ -17,25 +17,29 @@
             :class="{ active: activeFilter === 'all' }"
             @click="filterVillages('all')"
           >
-            全部
+            <span class="button-text">全部村落</span>
+            <span class="button-icon"></span>
           </button>
           <button
             :class="{ active: activeFilter === 'chaoshan' }"
             @click="filterVillages('chaoshan')"
           >
-            潮汕村落
+            <span class="button-text">潮汕村落</span>
+            <span class="button-icon">🏯</span>
           </button>
           <button
             :class="{ active: activeFilter === 'guangfu' }"
             @click="filterVillages('guangfu')"
           >
-            广府村落
+            <span class="button-text">广府村落</span>
+            <span class="button-icon">🏘️</span>
           </button>
           <button
             :class="{ active: activeFilter === 'hakka' }"
             @click="filterVillages('hakka')"
           >
-            客家村落
+            <span class="button-text">客家村落</span>
+            <span class="button-icon">🏡</span>
           </button>
         </div>
       </div>
@@ -80,22 +84,22 @@ export default {
       activeFilter: 'all',
       villages: [
         // 潮汕村落
-        { id: 1, name: '潮州古城', category: 'chaoshan', location: '潮州市', description: '保存完好的潮州古城，拥有众多明清建筑。', image: '/images/hong.jpeg' },
-        { id: 2, name: '龙湖古寨', category: 'chaoshan', location: '汕头市', description: '面向南海的古老渔村，保留传统潮汕建筑风格。', image: '/images/hong.jpeg' },
-        { id: 7, name: '程洋冈村', category: 'chaoshan', location: '汕头市澄海区', description: '千年古村，有"粤东襟喉、潮州门户"之称', image: '/images/hong.jpeg' },
-        { id: 8, name: '前美村', category: 'chaoshan', location: '汕头市澄海区', description: '潮汕著名侨乡，拥有陈慈黉故居等名胜', image: '/images/hong.jpeg' },
+        { id: 1, name: '潮州古城', category: 'chaoshan', location: '潮州市', description: '保存完好的潮州古城，拥有众多明清建筑。', image: '/yuecunwenmai1/images/chaoshandiqu/chaozhougucheng/chaozhoushi1.png', component: 'ChaozhouGuchenView' },
+        { id: 2, name: '龙湖古寨', category: 'chaoshan', location: '汕头市', description: '面向南海的古老渔村，保留传统潮汕建筑风格。', image: '/yuecunwenmai1/images/chaoshandiqu/longhuguzhai/longhuguzhai1.png', component: 'LonghuGuzhaiView' },
+        { id: 7, name: '程洋冈村', category: 'chaoshan', location: '汕头市澄海区', description: '千年古村，有"粤东襟喉、潮州门户"之称', image: '/yuecunwenmai1/images/chaoshandiqu/chengyanggang/chengyanggang1.png', component: 'ChengyanggangView' },
+        { id: 8, name: '前美村', category: 'chaoshan', location: '汕头市澄海区', description: '潮汕著名侨乡，拥有陈慈黉故居等名胜', image: '/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun3.png', component: 'QianmeiView' },
 
         // 广府村落
-        { id: 3, name: '佛山祖庙', category: 'guangfu', location: '佛山市', description: '以祖庙为中心的广府文化村落，建筑精美。', image: '/images/hong.jpeg' },
-        { id: 4, name: '沙湾古镇', category: 'guangfu', location: '广州市', description: '典型的广府水乡，保留完整的古建筑群。', image: '/images/hong.jpeg' },
-        { id: 9, name: '大岭村', category: 'guangfu', location: '广州市番禺区', description: '千年古村，有"蛎江涌头，半月古村"之称', image: '/images/hong.jpeg' },
-        { id: 10, name: '松塘村', category: 'guangfu', location: '佛山市南海区', description: '翰林村，因村中数百年来出了不少进士而得名', image: '/images/hong.jpeg' },
+        { id: 3, name: '佛山祖庙', category: 'guangfu', location: '佛山市', description: '以祖庙为中心的广府文化村落，建筑精美。', image: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png', component: 'FoshanZumiaoView' },
+        { id: 4, name: '沙湾古镇', category: 'guangfu', location: '广州市', description: '典型的广府水乡，保留完整的古建筑群。', image: '/yuecunwenmai1/images/guangfudiqu/shawanguzhen/shawanguzhen2.png', component: 'ShawanGuzhenView' },
+        { id: 9, name: '大岭村', category: 'guangfu', location: '广州市番禺区', description: '千年古村，有"蛎江涌头，半月古村"之称', image: '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun2.png', component: 'DalingcunView' },
+        { id: 10, name: '松塘村', category: 'guangfu', location: '佛山市南海区', description: '翰林村，因村中数百年来出了不少进士而得名', image: '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun2.png', component: 'SongtangcunView' },
 
         // 客家村落
-        { id: 5, name: '雁南飞茶田', category: 'hakka', location: '梅州市', description: '客家围屋与茶田完美结合的生态村落。', image: '/images/hong.jpeg' },
-        { id: 6, name: '桥溪古韵', category: 'hakka', location: '梅州市', description: '隐藏在深山中的客家古村落，风景秀丽。', image: '/images/hong.jpeg' },
-        { id: 11, name: '侨乡村', category: 'hakka', location: '梅州市梅县区', description: '客家围屋博物馆，有"客家围屋之乡"的美誉', image: '/images/hong.jpeg' },
-        { id: 12, name: '南华又庐', category: 'hakka', location: '梅州市梅县区', description: '典型的客家方形围屋，建筑规模宏大', image: '/images/hong.jpeg' }
+        { id: 5, name: '雁南飞茶田', category: 'hakka', location: '梅州市', description: '客家围屋与茶田完美结合的生态村落。', image: '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian1.png', component: 'YannanfeichatianView' },
+        { id: 6, name: '桥溪古韵', category: 'hakka', location: '梅州市', description: '隐藏在深山中的客家古村落，风景秀丽。', image: '/yuecunwenmai1/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun3.png', component: 'QiaoxiguyunView' },
+        { id: 11, name: '侨乡村', category: 'hakka', location: '梅州市梅县区', description: '客家围屋博物馆，有"客家围屋之乡"的美誉', image: '/yuecunwenmai1/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun2.png', component: 'QiaoxiangcunView' },
+        { id: 12, name: '南华又庐', category: 'hakka', location: '梅州市梅县区', description: '典型的客家方形围屋，建筑规模宏大', image: '/yuecunwenmai1/images/kejiadiqu/nanhuayoulu/nanhuayoulu1.png', component: 'NanhuayouluView' }
       ]
     }
   },
@@ -127,15 +131,15 @@ export default {
 </script>
 
 <style scoped>
-/* 保持原有样式不变 */
 .villages {
   font-family: "Microsoft YaHei", sans-serif;
+  background-color: #f8f9fa;
 }
 
 .hero {
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url('/images/lan.jpeg') center/cover;
+  url('/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao5.png') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,10 +151,12 @@ export default {
 .hero-content h1 {
   font-size: 42px;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .hero-content p {
   font-size: 20px;
+  font-weight: 300;
 }
 
 .container {
@@ -160,14 +166,29 @@ export default {
 }
 
 .filter-section {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
 .filter-section h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 25px;
   color: #333;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+.filter-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  border-radius: 3px;
 }
 
 .filter-buttons {
@@ -178,32 +199,56 @@ export default {
 }
 
 .filter-buttons button {
-  padding: 10px 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
-  border-radius: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border: none;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
-  transition: all 0.3s;
+  font-weight: 500;
+  color: #555;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .filter-buttons button:hover {
-  background-color: #e0e0e0;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #e6eef7 0%, #b3c4d8 100%);
 }
 
 .filter-buttons button.active {
-  background-color: #1976d2;
+  background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
   color: white;
-  border-color: #1976d2;
+  box-shadow: 0 6px 15px rgba(254, 180, 123, 0.4);
+}
+
+.filter-buttons button.active:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(254, 180, 123, 0.5);
+}
+
+.button-text {
+  margin-right: 8px;
+}
+
+.button-icon {
+  font-size: 18px;
 }
 
 .village-list {
   min-height: 500px;
+  padding: 20px 0;
 }
 
 .no-results {
   text-align: center;
-  padding: 50px 0;
+  padding: 80px 0;
   color: #666;
   font-size: 18px;
 }
@@ -216,27 +261,49 @@ export default {
 
 .village-card {
   background: white;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer; /* 添加指针样式表示可点击 */
+  cursor: pointer;
+  position: relative;
 }
 
 .village-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.village-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  transition: all 0.3s ease;
+}
+
+.village-card:hover::before {
+  height: 8px;
 }
 
 .image-container {
   position: relative;
-  height: 200px;
+  height: 220px;
+  overflow: hidden;
 }
 
 .village-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.village-card:hover .village-image {
+  transform: scale(1.05);
 }
 
 .image-overlay {
@@ -244,19 +311,29 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
   color: white;
-  padding: 15px;
+  padding: 20px 15px 10px;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.village-card:hover .image-overlay {
+  transform: translateY(-5px);
 }
 
 .image-overlay h3 {
   margin: 0 0 5px 0;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .image-overlay .location {
-  font-size: 14px;
+  font-size: 15px;
   margin: 0;
+  font-weight: 300;
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
@@ -272,8 +349,33 @@ export default {
     font-size: 16px;
   }
 
+  .filter-section h2 {
+    font-size: 24px;
+  }
+
+  .filter-buttons button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+
   .village-grid {
     grid-template-columns: 1fr;
+  }
+
+  .image-container {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .filter-buttons button {
+    width: 80%;
   }
 }
 </style>

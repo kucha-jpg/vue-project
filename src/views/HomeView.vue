@@ -4,7 +4,7 @@
 
     <div class="hero" ref="heroSection">
       <video class="hero-video" autoplay muted loop>
-        <source src="/videos/44e31a4c6e7c6c0156f4d5b8e35fe89f.mp4" type="video/mp4">
+        <source src="/videos/0509_1.mov" type="video/mp4">
         <!-- 备用图片，当视频无法加载时显示 -->
         <img src="/images/hong.jpeg" alt="岭南文化背景" class="hero-fallback">
       </video>
@@ -83,7 +83,7 @@
         <div class="featured-section">
           <h2>精选村落</h2>
           <div class="village-list">
-            <div class="village-card" v-for="village in featuredVillages" :key="village.id">
+            <div class="village-card" v-for="village in featuredVillages" :key="village.id" @click="goToVillageDetail(village.id)">
               <img :src="village.image" :alt="village.name" class="village-image">
               <div class="village-caption">
                 <h3>{{ village.name }}</h3>
@@ -95,7 +95,7 @@
 
       <!-- 文化特色板块 -->
       <div class="culture-features">
-        <h2 class="section-title">岭南文化特色</h2>
+        <h2 class="section-title">文化特色</h2>
         <div class="feature-grid">
           <div class="feature-card" v-for="feature in features" :key="feature.id">
             <div class="feature-icon">
@@ -112,7 +112,9 @@
         <h2 class="section-title">特色分类</h2>
         <div class="category-grid">
           <div class="category-card" v-for="category in categories" :key="category.id">
-            <img :src="category.image" :alt="category.name">
+            <div class="category-image-container">
+              <img :src="category.image" :alt="category.name" class="wide-category-image">
+            </div>
             <span>{{ category.name }}</span>
           </div>
         </div>
@@ -121,12 +123,26 @@
       <!-- 用户评价/故事板块 -->
       <div class="testimonials">
         <h2 class="section-title">旅行者说</h2>
-        <div class="testimonial-slider">
-          <div class="testimonial-card" v-for="testimonial in testimonials" :key="testimonial.id">
-            <p>{{ testimonial.quote }}</p>
-            <div class="author">
-              <img :src="testimonial.avatar" :alt="testimonial.author">
-              <span>{{ testimonial.author }}</span>
+        <div class="testimonial-slider-container">
+          <div class="testimonial-slider-wrapper">
+            <div
+              class="testimonial-slider-track"
+              :style="sliderTrackStyle"
+              @mouseenter="pauseAutoScroll"
+              @mouseleave="resumeAutoScroll"
+            >
+              <div
+                class="testimonial-card"
+                v-for="(testimonial, index) in duplicatedTestimonials"
+                :key="`${testimonial.id}-${index}`"
+                :class="{ 'active': isActive(index) }"
+              >
+                <p>{{ testimonial.quote }}</p>
+                <div class="author">
+                  <img :src="testimonial.avatar" :alt="testimonial.author">
+                  <span>{{ testimonial.author }}</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -163,9 +179,10 @@
 <script>
 import NavBar from '@/components/NavBar.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Autoplay, Pagination } from 'swiper'
+import { Autoplay, Pagination, Navigation } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 
 const clickOutside = {
   beforeMount(el, binding) {
@@ -216,41 +233,69 @@ export default {
         {
           id: 'chaoshan',
           name: '潮汕村落',
-          image: '/images/hong.jpeg'
+          image: '/yuecunwenmai1/images/chaoshandiqu/chaozhougucheng/chaozhoushi5.png'
         },
         {
           id: 'guangfu',
           name: '广府村落',
-          image: '/images/hong.jpeg'
+          image: '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun1.png'
         },
         {
           id: 'hakka',
           name: '客家村落',
-          image: '/images/hong.jpeg'
+          image: '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian6.png'
         }
       ],
       featuredVillages: [
-        { id: 1, name: '岭南古村', image: '/images/hong.jpeg' },
-        { id: 2, name: '水乡人家', image: '/images/hong.jpeg' },
-        { id: 3, name: '客家围屋', image: '/images/hong.jpeg' }
+        { id: 10, name: '松塘村', image: '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun2.png' },
+        { id: 5, name: '雁南飞茶田', image: '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian1.png' },
+        { id: 7, name: '程洋冈村', image: '/yuecunwenmai1/images/chaoshandiqu/chengyanggang/chengyanggang2.png' }
       ],
       slides: [
-        { title: '岭南文化', image: '/images/hong.jpeg' },
-        { title: '传统村落', image: '/images/hong.jpeg' },
-        { title: '客家文化', image: '/images/hong.jpeg' }
+        { title: '佛山祖庙', image: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png' },
+        { title: '桥溪古镇', image: '/yuecunwenmai1/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun3.png' },
+        { title: '龙湖古寨', image: '/yuecunwenmai1/images/chaoshandiqu/longhuguzhai/longhuguzhai3.png' }
       ],
       features: [
-        { id: 1, title: '建筑艺术', icon: '/images/hong.jpeg', description: '岭南建筑融合了中西风格，骑楼、碉楼、祠堂等建筑形式独具特色。' },
-        { id: 2, title: '民俗文化', icon: '/images/hong.jpeg', description: '岭南地区保留了丰富的民俗活动，如醒狮、粤剧、龙舟赛等传统节庆。' },
-        { id: 3, title: '美食文化', icon: '/images/hong.jpeg', description: '粤菜、潮州菜、客家菜三大菜系汇聚，早茶文化、凉茶文化闻名遐迩。' }
+        { id: 1, title: '建筑艺术', icon: '/yuecunwenmai1/images/jianzhu/广府（珠三角）地区/灰塑.jpg', description: '建筑融合了中西风格，骑楼、碉楼、祠堂等建筑形式独具特色。' },
+        { id: 2, title: '民俗文化', icon: '/yuecunwenmai1/images/民俗文化/潮汕文化/潮剧.jpg', description: '地区保留了丰富的民俗活动，如醒狮、粤剧、龙舟赛等传统节庆。' },
+        { id: 3, title: '美食文化', icon: '/yuecunwenmai1/images/美食文化/广府美食/广式早茶文化.jpg', description: '粤菜、潮州菜、客家菜三大菜系汇聚，早茶文化、凉茶文化闻名遐迩。' }
       ],
       testimonials: [
-        { id: 1, quote: '岭南古村落让我感受到了传统文化的魅力，仿佛穿越回了古代。', author: '张先生', avatar: '/images/hong.jpeg' },
-        { id: 2, quote: '客家围屋的建筑智慧令人惊叹，这次旅行收获颇丰。', author: '李小姐', avatar: '/images/hong.jpeg' }
+        {
+          id: 1,
+          quote: '古村落让我感受到了传统文化的魅力，仿佛穿越回了古代。那些精美的雕刻和古老的建筑让我惊叹不已。',
+          author: '张先生',
+          avatar: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
+        },
+        {
+          id: 2,
+          quote: '客家围屋的建筑智慧令人惊叹，这次旅行让我对客家文化有了更深的了解，收获颇丰。',
+          author: '李小姐',
+          avatar: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
+        },
+        {
+          id: 3,
+          quote: '潮汕村落的民俗活动非常丰富，我体验了当地的英歌舞表演，感受到了浓厚的文化氛围。',
+          author: '王先生',
+          avatar: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
+        },
+        {
+          id: 4,
+          quote: '广府村落的岭南园林设计精巧，每一处都透露出岭南人的生活智慧，非常值得一游。',
+          author: '赵女士',
+          avatar: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
+        },
+        {
+          id: 5,
+          quote: '这次旅行让我对传统村落的保护有了新的认识，希望这些文化遗产能得到更好的传承。',
+          author: '刘先生',
+          avatar: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
+        }
       ],
       newsList: [
-        { id: 1, title: '岭南文化节即将开幕', date: '2023-11-15', excerpt: '一年一度的岭南文化节将在广州举行，展示传统手工艺和民俗表演。', image: '/images/hong.jpeg' },
-        { id: 2, title: '古村落保护论坛召开', date: '2023-11-10', excerpt: '专家学者齐聚一堂，探讨传统村落保护与发展的新路径。', image: '/images/hong.jpeg' }
+        { id: 1, title: '文化节即将开幕', date: '2023-11-15', excerpt: '一年一度的文化节将在广州举行，展示传统手工艺和民俗表演。', image: '/yuecunwenmai1/images/特色手工艺/织染绣类/香云纱2.jpg' },
+        { id: 2, title: '古村落保护论坛召开', date: '2023-11-10', excerpt: '专家学者齐聚一堂，探讨传统村落保护与发展的新路径。', image: '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun5.png' }
       ],
       swiperOptions: {
         modules: [Autoplay, Pagination],
@@ -264,7 +309,12 @@ export default {
         }
       },
       observer: null,
-      sections: []
+      sections: [],
+      currentScrollPosition: 0,
+      scrollInterval: null,
+      isPaused: false,
+      duplicatedTestimonials: [],
+      activeIndex: 0
     }
   },
   computed: {
@@ -273,23 +323,38 @@ export default {
       return this.allVillages.filter(village =>
         village.category === this.selectedCategory
       )
+    },
+    sliderTrackStyle() {
+      return {
+        transform: `translateX(-${this.currentScrollPosition}px)`,
+        transition: this.isPaused ? 'none' : 'transform 0.5s ease'
+      }
     }
   },
   setup() {
     return {
-      modules: [Autoplay, Pagination]
+      modules: [Autoplay, Pagination, Navigation]
     }
   },
   mounted() {
     this.initObserver();
     window.addEventListener('scroll', this.handleScroll);
     this.checkScrollPosition();
+
+    // 复制评价数据以实现无限循环
+    this.duplicatedTestimonials = [...this.testimonials, ...this.testimonials];
+
+    // 初始化自动滚动
+    this.startAutoScroll();
   },
   beforeUnmount() {
     if (this.observer) {
       this.observer.disconnect();
     }
     window.removeEventListener('scroll', this.handleScroll);
+    if (this.scrollInterval) {
+      clearInterval(this.scrollInterval);
+    }
   },
   methods: {
     initObserver() {
@@ -354,6 +419,40 @@ export default {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' })
       }
+    },
+    onTestimonialSwiper(swiper) {
+      this.testimonialSwiper = swiper;
+    },
+    startAutoScroll() {
+      const cardWidth = 300; // 根据实际卡片宽度调整
+      const totalCards = this.testimonials.length;
+
+      this.scrollInterval = setInterval(() => {
+        if (!this.isPaused) {
+          this.currentScrollPosition += cardWidth;
+
+          // 当滚动到复制的部分时，重置位置
+          if (this.currentScrollPosition >= cardWidth * totalCards) {
+            setTimeout(() => {
+              this.currentScrollPosition = 0;
+            }, 500); // 等待动画完成
+          }
+
+          // 更新活动卡片索引
+          this.activeIndex = Math.floor(this.currentScrollPosition / cardWidth) % totalCards;
+        }
+      }, 3000);
+    },
+    pauseAutoScroll() {
+      this.isPaused = true;
+    },
+    resumeAutoScroll() {
+      this.isPaused = false;
+    },
+    isActive(index) {
+      const totalCards = this.testimonials.length;
+      const normalizedIndex = index % totalCards;
+      return normalizedIndex === this.activeIndex;
     }
   }
 }
@@ -429,8 +528,6 @@ export default {
   position: relative;
   z-index: 1;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
   max-width: 800px;
 }
 
@@ -687,6 +784,7 @@ export default {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   background: white;
+  cursor: pointer;
 }
 
 .village-card:hover {
@@ -772,12 +870,15 @@ export default {
   align-items: center;
   justify-content: center;
   background-color: #f5f5f5;
-  border-radius: 50%;
+  border-radius: 50%; /* 添加这行使图标容器变成圆形 */
+  overflow: hidden; /* 确保图片不会超出圆形边界 */
 }
 
 .feature-icon img {
   width: 50px;
   height: 50px;
+  border-radius: 50%; /* 可选：如果你想让图片本身也是圆形 */
+  object-fit: cover; /* 确保图片按比例填充 */
 }
 
 .feature-card h3 {
@@ -798,8 +899,8 @@ export default {
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .category-card {
@@ -808,34 +909,51 @@ export default {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  background: white;
 }
 
 .category-card:hover {
   transform: translateY(-5px);
 }
 
-.category-card img {
+.category-image-container {
   width: 100%;
-  height: 200px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.wide-category-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.category-card:hover img {
+.category-card:hover .wide-category-image {
   transform: scale(1.05);
 }
 
 .category-card span {
   position: absolute;
   bottom: 15px;
-  left: 15px;
   right: 15px;
   background: rgba(0, 0, 0, 0.6);
   color: white;
-  padding: 10px;
+  padding: 8px 12px;
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
+  text-align: center;
+  width: auto;
+  display: inline-block;
+  /* 移除之前的位置设置 */
+  left: auto;
+  transform: none;
+  /* 添加以下样式使标签更紧凑 */
+  white-space: nowrap;
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .testimonials {
@@ -844,25 +962,50 @@ export default {
   margin-bottom: 60px;
 }
 
-.testimonial-slider {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+.testimonial-slider-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonial-slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-slider-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
 }
 
 .testimonial-card {
   background: white;
-  padding: 30px;
+  padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   position: relative;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  margin-right: 30px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+
+.testimonial-card.active {
+  opacity: 1;
 }
 
 .testimonial-card p {
   font-size: 18px;
   line-height: 1.6;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-style: italic;
 }
 
@@ -892,6 +1035,30 @@ export default {
   font-size: 16px;
   font-weight: 500;
   color: #333;
+}
+
+/* Swiper导航按钮样式 */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #c3a47a;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .news-section {
@@ -996,6 +1163,10 @@ export default {
     margin-top: 0;
     height: auto;
   }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 992px) {
@@ -1026,6 +1197,10 @@ export default {
 
   .search-box {
     max-width: 350px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1071,7 +1246,7 @@ export default {
   }
 
   .category-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .right-nav {
@@ -1090,10 +1265,6 @@ export default {
 
   .hero-content p {
     font-size: 16px;
-  }
-
-  .category-grid {
-    grid-template-columns: 1fr;
   }
 
   .carousel-image {
