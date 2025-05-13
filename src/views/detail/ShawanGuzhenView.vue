@@ -58,16 +58,16 @@ export default {
         category: 'guangzhou',
         location: '广州市番禺区',
         description: '800年历史的岭南广府文化古镇，以传统建筑、广东音乐和美食闻名。',
-        image: '/yuecunwenmai1/images/guangfudiqu/shawanguzhen/shawanguzhen2.png'
+        image: '/images/guangfudiqu/shawanguzhen/shawanguzhen2.png'
       },
       images: [
-        '/yuecunwenmai1/images/guangfudiqu/shawanguzhen/shawanguzhen1.png',
-        '/yuecunwenmai1/images/guangfudiqu/shawanguzhen/shawanguzhen2.png',
-        '/yuecunwenmai1/images/guangfudiqu/shawanguzhen/shawanguzhen3.png',
-        '/yuecunwenmai1/images/guangfudiqu/shawanguzhen/shawanguzhen4.png',
-        '/yuecunwenmai1/images/guangfudiqu/shawanguzhen/shawanguzhen5.png',
-        '/yuecunwenmai1/images/guangfudiqu/shawanguzhen/shawanguzhen6.png',
-        '/yuecunwenmai1/images/guangfudiqu/shawanguzhen/shawanguzhen7.png'
+        '/images/guangfudiqu/shawanguzhen/shawanguzhen1.png',
+        '/images/guangfudiqu/shawanguzhen/shawanguzhen2.png',
+        '/images/guangfudiqu/shawanguzhen/shawanguzhen3.png',
+        '/images/guangfudiqu/shawanguzhen/shawanguzhen4.png',
+        '/images/guangfudiqu/shawanguzhen/shawanguzhen5.png',
+        '/images/guangfudiqu/shawanguzhen/shawanguzhen6.png',
+        '/images/guangfudiqu/shawanguzhen/shawanguzhen7.png'
       ]
     }
   },

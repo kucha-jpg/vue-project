@@ -53,14 +53,14 @@ export default {
         category: 'meizhou',
         location: '广东省梅州市梅县区南口镇侨乡村',
         description: '梅州地区规模最大、保存最完好的客家民居之一，始建于清光绪十二年。',
-        image: '/yuecunwenmai1/images/kejiadiqu/nanhuayoulu/nanhuayoulu1.png'
+        image: '/images/kejiadiqu/nanhuayoulu/nanhuayoulu1.png'
       },
       images: [
-        '/yuecunwenmai1/images/kejiadiqu/nanhuayoulu/nanhuayoulu1.png',
-        '/yuecunwenmai1/images/kejiadiqu/nanhuayoulu/nanhuayoulu5.png',
-        '/yuecunwenmai1/images/kejiadiqu/nanhuayoulu/nanhuayoulu4.png',
-        '/yuecunwenmai1/images/kejiadiqu/nanhuayoulu/nanhuayoulu2.png',
-        '/yuecunwenmai1/images/kejiadiqu/nanhuayoulu/nanhuayoulu3.png'
+        '/images/kejiadiqu/nanhuayoulu/nanhuayoulu1.png',
+        '/images/kejiadiqu/nanhuayoulu/nanhuayoulu5.png',
+        '/images/kejiadiqu/nanhuayoulu/nanhuayoulu4.png',
+        '/images/kejiadiqu/nanhuayoulu/nanhuayoulu2.png',
+        '/images/kejiadiqu/nanhuayoulu/nanhuayoulu3.png'
       ]
     }
   },

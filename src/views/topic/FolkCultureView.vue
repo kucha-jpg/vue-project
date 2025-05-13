@@ -1,7 +1,7 @@
 <template>
   <div class="topic-detail">
     <NavBar />
-    <div class="topic-header" style="background-image: url('/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun6.png')">
+    <div class="topic-header" style="background-image: url('/images/guangfudiqu/dalingcun/dalingcun6.png')">
       <button class="back-button" @click="goBack">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
           <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
@@ -9,7 +9,7 @@
         返回
       </button>
       <h1>广东民俗文化</h1>
-      <p>探索岭南文化瑰宝，领略多彩民俗风情</p>
+      <p>探索文化瑰宝，领略多彩民俗风情</p>
     </div>
     <div class="topic-content">
       <div class="tab-container">
@@ -29,7 +29,7 @@
           <div v-if="activeTab === 0" class="culture-section">
             <h2>潮汕文化</h2>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/民俗文化/潮汕文化/潮剧.jpg" alt="潮剧" class="culture-image">
+              <img src="/images/民俗文化/潮汕文化/潮剧.jpg" alt="潮剧" class="culture-image">
               <div class="culture-text">
                 <h3>潮剧</h3>
                 <p>潮剧是发源于广东潮汕地区的古老戏曲剧种，具有500余年历史，2006年入选首批国家级非物质文化遗产。作为中国戏曲艺术的活化石，潮剧以潮州方言为演唱载体，完整保留了明代南戏的表演体系和音乐特征，其独特的"帮声"伴唱形式被誉为"中国戏曲音乐的活化石"。</p>
@@ -43,14 +43,14 @@
           <div v-if="activeTab === 1" class="culture-section">
             <h2>广府文化</h2>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/民俗文化/广府文化/醒狮.png" alt="广府醒狮" class="culture-image">
+              <img src="/images/民俗文化/广府文化/醒狮.png" alt="广府醒狮" class="culture-image">
               <div class="culture-text">
                 <h3>广府醒狮</h3>
                 <p>广府醒狮是融武术、舞蹈、音乐等为一体的传统民俗文化，每逢节庆或有重大活动，必有醒狮助兴，寓意吉祥如意。</p>
               </div>
             </div>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/民俗文化/广府文化/粤剧.jpg" alt="粤剧" class="culture-image">
+              <img src="/images/民俗文化/广府文化/粤剧.jpg" alt="粤剧" class="culture-image">
               <div class="culture-text">
                 <h3>粤剧</h3>
                 <p>粤剧是发源于广东地区的重要传统戏曲剧种，迄今已有三百余年历史，2009年被联合国教科文组织列入人类非物质文化遗产代表作名录。作为岭南文化的艺术瑰宝，粤剧以粤语演唱为特色，融合了弋阳腔、昆腔和本地民间曲艺，形成了独特的表演体系。</p>
@@ -64,42 +64,42 @@
           <div v-if="activeTab === 2" class="culture-section">
             <h2>客家文化</h2>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/民俗文化/客家文化/客家采茶戏.webp" alt="客家采茶戏" class="culture-image">
+              <img src="/images/民俗文化/客家文化/客家采茶戏.webp" alt="客家采茶戏" class="culture-image">
               <div class="culture-text">
                 <h3>客家采茶戏</h3>
                 <p>客家采茶戏是客家地区具有代表性的传统戏曲剧种，以采茶劳动为题材，具有浓郁的生活气息和地方特色。</p>
               </div>
             </div>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/民俗文化/客家文化/客家广东汉乐.webp" alt="客家广东汉乐" class="culture-image">
+              <img src="/images/民俗文化/客家文化/客家广东汉乐.webp" alt="客家广东汉乐" class="culture-image">
               <div class="culture-text">
                 <h3>客家广东汉乐</h3>
                 <p>客家广东汉乐历史悠久，是客家地区重要的传统音乐形式，旋律优美，富有韵味。</p>
               </div>
             </div>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/民俗文化/客家文化/客家花朝戏.webp" alt="客家花朝戏" class="culture-image">
+              <img src="/images/民俗文化/客家文化/客家花朝戏.webp" alt="客家花朝戏" class="culture-image">
               <div class="culture-text">
                 <h3>客家花朝戏</h3>
                 <p>客家花朝戏是客家地区独特的民间小戏，以其独特的表演风格和唱腔深受群众喜爱。</p>
               </div>
             </div>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/民俗文化/客家文化/客家鲤鱼灯.png" alt="客家鲤鱼灯" class="culture-image">
+              <img src="/images/民俗文化/客家文化/客家鲤鱼灯.png" alt="客家鲤鱼灯" class="culture-image">
               <div class="culture-text">
                 <h3>客家鲤鱼灯</h3>
                 <p>客家鲤鱼灯是客家地区传统的民间舞蹈道具，常在节日期间表演，寓意吉祥如意。</p>
               </div>
             </div>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/民俗文化/客家文化/客家青溪黑蛟龙灯舞.webp" alt="客家青溪黑蛟龙灯舞" class="culture-image">
+              <img src="/images/民俗文化/客家文化/客家青溪黑蛟龙灯舞.webp" alt="客家青溪黑蛟龙灯舞" class="culture-image">
               <div class="culture-text">
                 <h3>客家青溪黑蛟龙灯舞</h3>
                 <p>客家青溪黑蛟龙灯舞是客家地区独特的民间舞蹈，表演气势恢宏，具有浓郁的地方特色。</p>
               </div>
             </div>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/民俗文化/客家文化/客家舞麒麟.png" alt="客家舞麒麟" class="culture-image">
+              <img src="/images/民俗文化/客家文化/客家舞麒麟.png" alt="客家舞麒麟" class="culture-image">
               <div class="culture-text">
                 <h3>客家舞麒麟</h3>
                 <p>客家舞麒麟是客家地区重要的传统民俗活动，寓意驱邪避灾、吉祥平安。</p>

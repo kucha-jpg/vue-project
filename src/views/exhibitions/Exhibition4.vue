@@ -127,14 +127,14 @@ export default {
   },
   data() {
     return {
-      headerImage: "/yuecunwenmai1/images/特色手工艺/织染绣类/广绣.jpg",
+      headerImage: "/images/特色手工艺/织染绣类/广绣.jpg",
       weavingImages: [
-        "/yuecunwenmai1/images/特色手工艺/编织扎作类/佛山彩灯1.jpeg",
-        "/yuecunwenmai1/images/特色手工艺/编织扎作类/佛山彩灯2.jpeg",
-        "/yuecunwenmai1/images/特色手工艺/编织扎作类/客家竹编1.jpg",
-        "/yuecunwenmai1/images/特色手工艺/编织扎作类/客家竹编2.jpg",
-        "/yuecunwenmai1/images/特色手工艺/编织扎作类/客家竹编3.jpg",
-        "/yuecunwenmai1/images/自然环境/潮汕“五行山墙”防风防火构造/图1.jpg"
+        "/images/特色手工艺/编织扎作类/佛山彩灯1.jpeg",
+        "/images/特色手工艺/编织扎作类/佛山彩灯2.jpeg",
+        "/images/特色手工艺/编织扎作类/客家竹编1.jpg",
+        "/images/特色手工艺/编织扎作类/客家竹编2.jpg",
+        "/images/特色手工艺/编织扎作类/客家竹编3.jpg",
+        "/images/自然环境/潮汕“五行山墙”防风防火构造/图1.jpg"
       ],
       weavingCaptions: [
         "佛山彩灯 - 色彩艳丽，造型精美",
@@ -145,11 +145,11 @@ export default {
         "潮汕藤编 - 独特的地域特色"
       ],
       carvingImages: [
-        "/yuecunwenmai1/images/特色手工艺/雕刻塑造类/潮汕木雕.jpg",
-        "/yuecunwenmai1/images/特色手工艺/雕刻塑造类/端砚1.jpg",
-        "/yuecunwenmai1/images/特色手工艺/雕刻塑造类/端砚2.jpg",
-        "/yuecunwenmai1/images/特色手工艺/雕刻塑造类/广府牙雕.jpg",
-        "/yuecunwenmai1/images/特色手工艺/雕刻塑造类/灰塑.jpg"
+        "/images/特色手工艺/雕刻塑造类/潮汕木雕.jpg",
+        "/images/特色手工艺/雕刻塑造类/端砚1.jpg",
+        "/images/特色手工艺/雕刻塑造类/端砚2.jpg",
+        "/images/特色手工艺/雕刻塑造类/广府牙雕.jpg",
+        "/images/特色手工艺/雕刻塑造类/灰塑.jpg"
       ],
       carvingCaptions: [
         "潮汕木雕 - 多层镂空，金漆贴面",
@@ -159,10 +159,10 @@ export default {
         "灰塑 - 岭南建筑装饰艺术"
       ],
       metalImages: [
-        "/yuecunwenmai1/images/特色手工艺/金属工艺类/潮州铁技1.jpg",
-        "/yuecunwenmai1/images/特色手工艺/金属工艺类/潮州铁技2.jpg",
-        "/yuecunwenmai1/images/特色手工艺/金属工艺类/西关.png",
-        "/yuecunwenmai1/images/特色手工艺/金属工艺类/西关铜艺.jpeg"
+        "/images/特色手工艺/金属工艺类/潮州铁技1.jpg",
+        "/images/特色手工艺/金属工艺类/潮州铁技2.jpg",
+        "/images/特色手工艺/金属工艺类/西关.png",
+        "/images/特色手工艺/金属工艺类/西关铜艺.jpeg"
       ],
       metalCaptions: [
         "潮州铁技 - 传统工艺",
@@ -171,11 +171,11 @@ export default {
         "西关铜器 - 清代外销精品"
       ],
       textileImages: [
-        "/yuecunwenmai1/images/特色手工艺/织染绣类/潮绣.jpg",
-        "/yuecunwenmai1/images/特色手工艺/织染绣类/广绣.jpg",
-        "/yuecunwenmai1/images/特色手工艺/织染绣类/客家青衫.jpg",
-        "/yuecunwenmai1/images/特色手工艺/织染绣类/香云纱1.jpg",
-        "/yuecunwenmai1/images/特色手工艺/织染绣类/香云纱2.jpg"
+        "/images/特色手工艺/织染绣类/潮绣.jpg",
+        "/images/特色手工艺/织染绣类/广绣.jpg",
+        "/images/特色手工艺/织染绣类/客家青衫.jpg",
+        "/images/特色手工艺/织染绣类/香云纱1.jpg",
+        "/images/特色手工艺/织染绣类/香云纱2.jpg"
       ],
       textileCaptions: [
         "潮绣 - 金线盘绕，流光溢彩",

@@ -56,16 +56,16 @@ export default {
         category: 'lingnan',
         location: '广东省佛山市南海区西樵镇',
         description: '800年历史的翰林古村，岭南文化瑰宝，中国历史文化名村。',
-        image: '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun7.png'
+        image: '/images/guangfudiqu/songtangcun/songtangcun7.png'
       },
       images: [
-        '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun1.png',
-        '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun2.png',
-        '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun3.png',
-        '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun4.png',
-        '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun5.png',
-        '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun6.png',
-        '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun7.png'
+        '/images/guangfudiqu/songtangcun/songtangcun1.png',
+        '/images/guangfudiqu/songtangcun/songtangcun2.png',
+        '/images/guangfudiqu/songtangcun/songtangcun3.png',
+        '/images/guangfudiqu/songtangcun/songtangcun4.png',
+        '/images/guangfudiqu/songtangcun/songtangcun5.png',
+        '/images/guangfudiqu/songtangcun/songtangcun6.png',
+        '/images/guangfudiqu/songtangcun/songtangcun7.png'
       ]
     }
   },

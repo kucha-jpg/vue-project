@@ -93,7 +93,7 @@ export default {
           description: '把广东味道捧在手心，让这些萌物带你领略独特的岭南美食风情，爱了爱了💕',
           category: '美食文创',
           origin: '广东',
-          image: '/yuecunwenmai1/images/文创/jellycat/1.png',
+          image: '/images/文创/jellycat/1.png',
           rating: '4.8',
           isNew: true,
           detail: '以广东特色美食为灵感设计的可爱玩偶，采用柔软亲肤面料，填充优质PP棉，可手洗清洁，是家居装饰和收藏的绝佳选择。'
@@ -104,7 +104,7 @@ export default {
           description: '把广东味道捧在手心，让这些萌物带你领略独特的岭南美食风情，爱了爱了💕',
           category: '美食文创',
           origin: '广东',
-          image: '/yuecunwenmai1/images/文创/jellycat/2.png',
+          image: '/images/文创/jellycat/2.png',
           rating: '4.9',
           isNew: false,
           detail: '以广东传统小吃为原型设计的玩偶，采用立体刺绣工艺展现食物细节，搭配精美包装盒，是送礼自用的优质选择。'
@@ -115,7 +115,7 @@ export default {
           description: '把广东味道捧在手心，让这些萌物带你领略独特的岭南美食风情，爱了爱了💕',
           category: '美食文创',
           origin: '广东',
-          image: '/yuecunwenmai1/images/文创/jellycat/3.png',
+          image: '/images/文创/jellycat/3.png',
           rating: '4.7',
           isNew: false,
           detail: '以广东特色甜品为造型的玩偶，采用环保印染工艺，色彩鲜艳持久，适合各个年龄段的收藏爱好者。'
@@ -126,7 +126,7 @@ export default {
           description: '把广东味道捧在手心，让这些萌物带你领略独特的岭南美食风情，爱了爱了💕',
           category: '美食文创',
           origin: '广东',
-          image: '/yuecunwenmai1/images/文创/jellycat/4.png',
+          image: '/images/文创/jellycat/4.png',
           rating: '4.6',
           isNew: true,
           detail: '以广东传统糕点为设计灵感的玩偶，采用双层缝制工艺，内部填充高回弹海绵，手感柔软舒适。'
@@ -137,7 +137,7 @@ export default {
           description: '把广东味道捧在手心，让这些萌物带你领略独特的岭南美食风情，爱了爱了💕',
           category: '美食文创',
           origin: '广东',
-          image: '/yuecunwenmai1/images/文创/jellycat/5.png',
+          image: '/images/文创/jellycat/5.png',
           rating: '4.8',
           isNew: true,
           detail: '以广东特色茶点为造型的玩偶，采用立体裁剪工艺，完美还原食物形态，是茶文化爱好者的收藏佳品。'
@@ -148,7 +148,7 @@ export default {
           description: '灵感源自潮汕非遗红桃粿，以经典桃形轮廓搭配吉祥纹饰，朱红主色调传递喜庆祝福。立体粿印压纹包身搭配流苏穗坠，将传统祭粿文化化为时尚单品，寓意「包」纳福运，随身携带潮汕人的吉庆记忆。',
           category: '非遗手作',
           origin: '广东潮汕',
-          image: '/yuecunwenmai1/images/文创/潮汕包包/chaoshanbaobao1.jpg',
+          image: '/images/文创/潮汕包包/chaoshanbaobao1.jpg',
           rating: '4.9',
           isNew: false,
           detail: '采用优质PU皮革制作，包身立体压纹工艺还原红桃粿纹样，可拆卸流苏设计，内部分层合理，容量适中，适合日常搭配。'
@@ -159,7 +159,7 @@ export default {
           description: '灵感源自潮汕非遗红桃粿，以经典桃形轮廓搭配吉祥纹饰，朱红主色调传递喜庆祝福。立体粿印压纹包身搭配流苏穗坠，将传统祭粿文化化为时尚单品，寓意「包」纳福运，随身携带潮汕人的吉庆记忆。',
           category: '非遗手作',
           origin: '广东潮汕',
-          image: '/yuecunwenmai1/images/文创/潮汕包包/chaoshanbaobao2.jpg',
+          image: '/images/文创/潮汕包包/chaoshanbaobao2.jpg',
           rating: '4.7',
           isNew: false,
           detail: '精选牛皮材质，包身压印红桃粿纹样，搭配金属流苏挂饰，内部分隔合理，可容纳手机、钱包等日常物品，适合商务休闲场合。'
@@ -170,7 +170,7 @@ export default {
           description: '采用激光切割工艺，在黄铜/不锈钢片上还原窗棂镂空结构，在书签顶部设计可拆卸的岭南灰塑元素吊坠（如鳌鱼、醒狮造型）',
           category: '工艺美术',
           origin: '广东',
-          image: '/yuecunwenmai1/images/文创/古村窗棂书签/gucunchuanglingshuqian1.png',
+          image: '/images/文创/古村窗棂书签/gucunchuanglingshuqian1.png',
           rating: '4.8',
           isNew: true,
           detail: '采用黄铜材质，激光切割还原传统窗棂纹样，顶部可更换灰塑元素吊坠，尺寸为15×4cm，表面做旧处理，适合书籍收藏爱好者。'
@@ -181,7 +181,7 @@ export default {
           description: '采用激光切割工艺，在黄铜/不锈钢片上还原窗棂镂空结构，在书签顶部设计可拆卸的岭南灰塑元素吊坠（如鳌鱼、醒狮造型）',
           category: '工艺美术',
           origin: '广东',
-          image: '/yuecunwenmai1/images/文创/古村窗棂书签/gucunchuanglingshuqian2.png',
+          image: '/images/文创/古村窗棂书签/gucunchuanglingshuqian2.png',
           rating: '4.9',
           isNew: true,
           detail: '采用不锈钢材质，表面镀金处理，激光雕刻窗棂纹样，顶部可拆卸醒狮造型吊坠，尺寸为16×5cm，适合作为礼品赠送。'
@@ -192,7 +192,7 @@ export default {
           description: '1. 主题定位\n• 系列名称：《岭南旧梦》\n• 风格基调：岭南传统建筑元素 × 微缩景观 × Q版拟人角色\n• 目标人群：文旅爱好者、潮玩收藏圈、年轻文艺消费人群\n\n⸻\n\n2. 产品系列设计\n\n每一款盲盒都结合一个岭南经典建筑元素（总计8款+2款隐藏款）\n\n编号	名称	元素特色	角色设定\n01	镬耳飞檐	镬耳墙造型	小女孩佩戴飞檐发饰，脚踏青砖\n02	青砖小巷	青砖灰瓦小巷	短衣少年捧着油纸灯\n03	红门碧瓦	朱红大门配青瓦	小女孩推开小红门，眺望远方\n04	骑楼街景	骑楼拱廊建筑	小男孩靠着骑楼拱柱\n05	花窗光影	花格雕刻窗	小动物趴在雕花窗台上打盹\n06	石雕龙柱	石雕艺术	小角色盘坐在龙柱下\n07	岭南庭院	天井院落	小姑娘打理小院盆栽\n08	灰塑剪影	灰塑墙艺	灰塑图案在角色身后浮现',
           category: '潮玩收藏',
           origin: '广东',
-          image: '/yuecunwenmai1/images/文创/盲盒/3.png',
+          image: '/images/文创/盲盒/3.png',
           rating: '4.6',
           isNew: true,
           detail: '采用PVC材质，每款盲盒高度约8cm，附带专属展示底座，包装盒设计为岭南建筑风格，内含角色故事卡片。'
@@ -203,7 +203,7 @@ export default {
           description: '1. 主题定位\n• 系列名称：《岭南旧梦》\n• 风格基调：岭南传统建筑元素 × 微缩景观 × Q版拟人角色\n• 目标人群：文旅爱好者、潮玩收藏圈、年轻文艺消费人群\n\n⸻\n\n2. 产品系列设计\n\n每一款盲盒都结合一个岭南经典建筑元素（总计8款+2款隐藏款）\n\n编号	名称	元素特色	角色设定\n01	镬耳飞檐	镬耳墙造型	小女孩佩戴飞檐发饰，脚踏青砖\n02	青砖小巷	青砖灰瓦小巷	短衣少年捧着油纸灯\n03	红门碧瓦	朱红大门配青瓦	小女孩推开小红门，眺望远方\n04	骑楼街景	骑楼拱廊建筑	小男孩靠着骑楼拱柱\n05	花窗光影	花格雕刻窗	小动物趴在雕花窗台上打盹\n06	石雕龙柱	石雕艺术	小角色盘坐在龙柱下\n07	岭南庭院	天井院落	小姑娘打理小院盆栽\n08	灰塑剪影	灰塑墙艺	灰塑图案在角色身后浮现',
           category: '潮玩收藏',
           origin: '广东',
-          image: '/yuecunwenmai1/images/文创/盲盒/4.png',
+          image: '/images/文创/盲盒/4.png',
           rating: '4.7',
           isNew: true,
           detail: '隐藏款设计有特殊工艺处理，如夜光效果或可动关节，每盒附带收藏编号，适合系列收藏。'
@@ -214,7 +214,7 @@ export default {
           description: '岭南花窗·手机壳\n参考广府祠堂和骑楼建筑中的镂空花窗图案，采用环保TPU材质与激光镂空工艺，兼具美观与保护性，成为随身岭南文化"展示窗"',
           category: '数码配件',
           origin: '广东',
-          image: '/yuecunwenmai1/images/文创/手机壳/1.jpg',
+          image: '/images/文创/手机壳/1.jpg',
           rating: '4.8',
           isNew: true,
           detail: '采用TPU软胶材质，四角加厚防摔设计，激光镂空工艺精准还原花窗图案，适配主流手机型号，提供多种颜色选择。'
@@ -225,7 +225,7 @@ export default {
           description: '广绣流光·丝巾\n以传统广绣图案（如双喜鸳鸯、龙凤呈祥）为设计母本，选用真丝或雪纺材质，融合当代配色系统，打造兼具典雅与时尚感的日常佩戴艺术品',
           category: '服饰配件',
           origin: '广东',
-          image: '/yuecunwenmai1/images/文创/丝巾/1.jpg',
+          image: '/images/文创/丝巾/1.jpg',
           rating: '4.9',
           isNew: false,
           detail: '采用100%真丝材质，手工卷边工艺，尺寸为90×90cm，图案采用数码印花技术，色彩鲜艳持久，适合搭配各种服饰。'
@@ -236,7 +236,7 @@ export default {
           description: '广绣流光·丝巾\n以传统广绣图案（如双喜鸳鸯、龙凤呈祥）为设计母本，选用真丝或雪纺材质，融合当代配色系统，打造兼具典雅与时尚感的日常佩戴艺术品',
           category: '服饰配件',
           origin: '广东',
-          image: '/yuecunwenmai1/images/文创/丝巾/2.png',
+          image: '/images/文创/丝巾/2.png',
           rating: '4.8',
           isNew: false,
           detail: '采用雪纺材质，轻盈透气，尺寸为180×65cm，可作披肩或头巾使用，图案设计融合现代审美，适合日常佩戴。'
@@ -272,7 +272,7 @@ export default {
 .page-header {
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url('/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun6.png') center/cover;
+  url('/images/chaoshandiqu/qianmeicun/qianmeicun6.png') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -193,26 +193,26 @@ export default {
   data() {
     return {
       guangfuImages: [
-        { src: '/yuecunwenmai1/images/buju/guangfu/塱头古村——新浪新闻.jpg', alt: '塱头古村', caption: '塱头古村' },
-        { src: '/yuecunwenmai1/images/buju/guangfu/麻村（棋盘式）.jpg', alt: '麻村', caption: '麻村（棋盘式）' },
-        { src: '/yuecunwenmai1/images/buju/guangfu/麻村图1.jpg', alt: '麻村', caption: '麻村图1' },
-        { src: '/yuecunwenmai1/images/buju/guangfu/麻村图2.jpg', alt: '上流村', caption: '麻村图2' },
-        { src: '/yuecunwenmai1/images/buju/guangfu/上流村梳式布局图.png', alt: '蚬岗村', caption: '上流村梳式布局图' },
-        { src: '/yuecunwenmai1/images/buju/guangfu/蚬岗村放射式.png', alt: '大岭村', caption: '蚬岗村放射式' }
+        { src: '/images/buju/guangfu/塱头古村——新浪新闻.jpg', alt: '塱头古村', caption: '塱头古村' },
+        { src: '/images/buju/guangfu/麻村（棋盘式）.jpg', alt: '麻村', caption: '麻村（棋盘式）' },
+        { src: '/images/buju/guangfu/麻村图1.jpg', alt: '麻村', caption: '麻村图1' },
+        { src: '/images/buju/guangfu/麻村图2.jpg', alt: '上流村', caption: '麻村图2' },
+        { src: '/images/buju/guangfu/上流村梳式布局图.png', alt: '蚬岗村', caption: '上流村梳式布局图' },
+        { src: '/images/buju/guangfu/蚬岗村放射式.png', alt: '大岭村', caption: '蚬岗村放射式' }
       ],
       hakkaImages: [
-        { src: '/yuecunwenmai1/images/buju/kejia/河源四角楼.jpg', alt: '河源四角楼', caption: '河源四角楼' },
-        { src: '/yuecunwenmai1/images/buju/kejia/客家围楼（向心式）.jpg', alt: '客家围楼', caption: '客家围楼（向心式）' },
-        { src: '/yuecunwenmai1/images/buju/kejia/韶关客家大围.jpeg', alt: '韶关客家大围', caption: '韶关客家大围' }
+        { src: '/images/buju/kejia/河源四角楼.jpg', alt: '河源四角楼', caption: '河源四角楼' },
+        { src: '/images/buju/kejia/客家围楼（向心式）.jpg', alt: '客家围楼', caption: '客家围楼（向心式）' },
+        { src: '/images/buju/kejia/韶关客家大围.jpeg', alt: '韶关客家大围', caption: '韶关客家大围' }
       ],
       chaoshanImages: [
-        { src: '/yuecunwenmai1/images/buju/chaoshan/九龙吐珠.webp', alt: '百鸟朝凤', caption: '九龙吐珠1' },
-        { src: '/yuecunwenmai1/images/buju/chaoshan/九龙吐珠.png', alt: '陈慈黉故居', caption: '九龙吐珠2' },
-        { src: '/yuecunwenmai1/images/buju/chaoshan/百鸟朝凤.png', alt: '陈慈黉故居', caption: '百鸟朝凤' },
-        { src: '/yuecunwenmai1/images/buju/chaoshan/四点金.png', alt: '九龙吐珠', caption: '四点金' },
-        { src: '/yuecunwenmai1/images/buju/chaoshan/陈慈黉（驷马拖车）.jpg', alt: '九龙吐珠', caption: '陈慈黉（驷马拖车）' },
-        { src: '/yuecunwenmai1/images/buju/chaoshan/澄海陈慈黉.jpg', alt: '四点金', caption: '澄海陈慈黉' },
-        { src: '/yuecunwenmai1/images/buju/chaoshan/汕头澄海陈慈黉故居.jpg', alt: '象埔寨', caption: '汕头澄海陈慈黉故居' }
+        { src: '/images/buju/chaoshan/九龙吐珠.webp', alt: '百鸟朝凤', caption: '九龙吐珠1' },
+        { src: '/images/buju/chaoshan/九龙吐珠.png', alt: '陈慈黉故居', caption: '九龙吐珠2' },
+        { src: '/images/buju/chaoshan/百鸟朝凤.png', alt: '陈慈黉故居', caption: '百鸟朝凤' },
+        { src: '/images/buju/chaoshan/四点金.png', alt: '九龙吐珠', caption: '四点金' },
+        { src: '/images/buju/chaoshan/陈慈黉（驷马拖车）.jpg', alt: '九龙吐珠', caption: '陈慈黉（驷马拖车）' },
+        { src: '/images/buju/chaoshan/澄海陈慈黉.jpg', alt: '四点金', caption: '澄海陈慈黉' },
+        { src: '/images/buju/chaoshan/汕头澄海陈慈黉故居.jpg', alt: '象埔寨', caption: '汕头澄海陈慈黉故居' }
       ]
     }
   }
@@ -222,7 +222,7 @@ export default {
 <style scoped>
 .exhibition-detail {
   font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
-  background: url('/yuecunwenmai1/images/buju/kejia/河源四角楼.jpg') no-repeat center center fixed;
+  background: url('/images/buju/kejia/河源四角楼.jpg') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
   padding-top: 0;

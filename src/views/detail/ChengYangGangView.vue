@@ -53,15 +53,15 @@ export default {
         category: 'chaoshan',
         location: '广东省汕头市澄海区莲下镇',
         description: '历史悠久的程洋冈，海上丝绸之路节点港口，以丹砂古寺、虎丘摩崖石刻等建筑闻名。',
-        image: '/yuecunwenmai1/images/chaoshandiqu/chengyanggang/chengyanggang1.png'
+        image: '/images/chaoshandiqu/chengyanggang/chengyanggang1.png'
       },
       images: [
-        '/yuecunwenmai1/images/chaoshandiqu/chengyanggang/chengyanggang1.png',
-        '/yuecunwenmai1/images/chaoshandiqu/chengyanggang/chengyanggang2.png',
-        '/yuecunwenmai1/images/chaoshandiqu/chengyanggang/chengyanggang3.png',
-        '/yuecunwenmai1/images/chaoshandiqu/chengyanggang/chengyanggang4.png',
-        '/yuecunwenmai1/images/chaoshandiqu/chengyanggang/chengyanggang5.png',
-        '/yuecunwenmai1/images/chaoshandiqu/chengyanggang/chengyanggang6.png'
+        '/images/chaoshandiqu/chengyanggang/chengyanggang1.png',
+        '/images/chaoshandiqu/chengyanggang/chengyanggang2.png',
+        '/images/chaoshandiqu/chengyanggang/chengyanggang3.png',
+        '/images/chaoshandiqu/chengyanggang/chengyanggang4.png',
+        '/images/chaoshandiqu/chengyanggang/chengyanggang5.png',
+        '/images/chaoshandiqu/chengyanggang/chengyanggang6.png'
       ]
     }
   },

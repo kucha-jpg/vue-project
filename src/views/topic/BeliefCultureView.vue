@@ -1,7 +1,7 @@
 <template>
   <div class="topic-detail">
     <NavBar />
-    <div class="topic-header" style="background-image: url('/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian2.png')">
+    <div class="topic-header" style="background-image: url('/images/kejiadiqu/yannanfeichatian/yannanfeichatian2.png')">
       <button class="back-button" @click="goBack">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
           <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
@@ -9,7 +9,7 @@
         返回
       </button>
       <h1>广东信仰文化</h1>
-      <p>探寻岭南多元信仰，传承文化精髓</p>
+      <p>探寻多元信仰，传承文化精髓</p>
     </div>
     <div class="topic-content">
       <div class="culture-tabs">
@@ -28,7 +28,7 @@
         <div v-if="activeTab === 'chaoshan'" class="culture-section">
           <h2>潮汕信仰文化</h2>
           <div class="culture-item">
-            <img src="/yuecunwenmai1/images/信仰文化/潮汕地区/潮汕三山国王.jpg" alt="潮汕信仰文化">
+            <img src="/images/信仰文化/潮汕地区/潮汕三山国王.jpg" alt="潮汕信仰文化">
             <div class="culture-text">
               <h3>三山国王信仰</h3>
               <p>三山国王是潮汕地区特有的民间信仰，起源于揭西县的三座山神。相传三位国王生前是隋朝的将军，死后显灵护国庇民。</p>
@@ -36,7 +36,7 @@
             </div>
           </div>
           <div class="culture-item reverse">
-            <img src="/yuecunwenmai1/images/信仰文化/潮汕地区/老爷牌.webp" alt="老爷牌">
+            <img src="/images/信仰文化/潮汕地区/老爷牌.webp" alt="老爷牌">
             <div class="culture-text">
               <h3>老爷牌文化</h3>
               <p>"老爷牌"是潮汕地区民间信仰中的重要祭祀用品，常见于传统节庆和宗族活动中。"老爷"在潮汕方言中指代各类神明，如三山国王、妈祖、土地公等。</p>
@@ -50,7 +50,7 @@
         <div v-if="activeTab === 'guangfu'" class="culture-section">
           <h2>广府信仰文化</h2>
           <div class="culture-item">
-            <img src="/yuecunwenmai1/images/信仰文化/珠三角地区/珠三角北帝信仰.jpg" alt="北帝信仰">
+            <img src="/images/信仰文化/珠三角地区/珠三角北帝信仰.jpg" alt="北帝信仰">
             <div class="culture-text">
               <h3>北帝信仰</h3>
               <p>北帝(真武大帝)信仰在广府地区尤为盛行，尤其是佛山祖庙供奉的北帝最为著名。北帝被视为水神，广府地区水网密布，人们祈求北帝保佑风调雨顺、水陆平安。</p>
@@ -58,7 +58,7 @@
             </div>
           </div>
           <div class="culture-item reverse">
-            <img src="/yuecunwenmai1/images/信仰文化/珠三角地区/珠三角龙母信仰.jpg" alt="龙母信仰">
+            <img src="/images/信仰文化/珠三角地区/珠三角龙母信仰.jpg" alt="龙母信仰">
             <div class="culture-text">
               <h3>龙母信仰</h3>
               <p>龙母信仰是珠江三角洲地区特有的水神崇拜文化，以肇庆悦城龙母祖庙为中心，距今已有两千多年历史。龙母（公元前290年-公元前210年），相传为秦代百越族女首领，因驯养五龙、造福西江流域而被尊为"水神"。</p>
@@ -66,7 +66,7 @@
             </div>
           </div>
           <div class="culture-item">
-            <img src="/yuecunwenmai1/images/信仰文化/珠三角地区/珠三角金花娘娘.jpg" alt="金花娘娘">
+            <img src="/images/信仰文化/珠三角地区/珠三角金花娘娘.jpg" alt="金花娘娘">
             <div class="culture-text">
               <h3>金花娘娘信仰</h3>
               <p>金花娘娘是广府地区特有的生育女神，相传为明代广州一位姓金的民间女子，因救助难产妇女而升仙。金花庙遍布珠三角地区，以广州金花直街的金花古庙最为著名。</p>
@@ -79,7 +79,7 @@
         <div v-if="activeTab === 'hakka'" class="culture-section">
           <h2>客家信仰文化</h2>
           <div class="culture-item">
-            <img src="/yuecunwenmai1/images/信仰文化/客家地区/妈祖.png" alt="妈祖文化">
+            <img src="/images/信仰文化/客家地区/妈祖.png" alt="妈祖文化">
             <div class="culture-text">
               <h3>妈祖文化</h3>
               <p>妈祖文化是以海上女神林默（960-987）为核心形成的民间信仰体系，发源于福建莆田湄洲岛，现已成为跨越45个国家和地区的全球性文化现象。</p>
@@ -87,7 +87,7 @@
             </div>
           </div>
           <div class="culture-item reverse">
-            <img src="/yuecunwenmai1/images/信仰文化/客家地区/定光古佛.jpg" alt="定光古佛">
+            <img src="/images/信仰文化/客家地区/定光古佛.jpg" alt="定光古佛">
             <div class="culture-text">
               <h3>定光古佛信仰</h3>
               <p>定光古佛是客家地区特有的民间信仰，相传是唐代高僧伏虎禅师。定光古佛被视为客家人的保护神，在闽粤赣边区的客家地区广受崇拜。</p>

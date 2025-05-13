@@ -233,69 +233,69 @@ export default {
         {
           id: 'chaoshan',
           name: '潮汕村落',
-          image: '/yuecunwenmai1/images/chaoshandiqu/chaozhougucheng/chaozhoushi5.png'
+          image: '/images/chaoshandiqu/chaozhougucheng/chaozhoushi5.png'
         },
         {
           id: 'guangfu',
           name: '广府村落',
-          image: '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun1.png'
+          image: '/images/guangfudiqu/dalingcun/dalingcun1.png'
         },
         {
           id: 'hakka',
           name: '客家村落',
-          image: '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian6.png'
+          image: '/images/kejiadiqu/yannanfeichatian/yannanfeichatian6.png'
         }
       ],
       featuredVillages: [
-        { id: 10, name: '松塘村', image: '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun2.png' },
-        { id: 5, name: '雁南飞茶田', image: '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian1.png' },
-        { id: 7, name: '程洋冈村', image: '/yuecunwenmai1/images/chaoshandiqu/chengyanggang/chengyanggang2.png' }
+        { id: 10, name: '松塘村', image: '/images/guangfudiqu/songtangcun/songtangcun2.png' },
+        { id: 5, name: '雁南飞茶田', image: '/images/kejiadiqu/yannanfeichatian/yannanfeichatian1.png' },
+        { id: 7, name: '程洋冈村', image: '/images/chaoshandiqu/chengyanggang/chengyanggang2.png' }
       ],
       slides: [
-        { title: '佛山祖庙', image: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png' },
-        { title: '桥溪古镇', image: '/yuecunwenmai1/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun3.png' },
-        { title: '龙湖古寨', image: '/yuecunwenmai1/images/chaoshandiqu/longhuguzhai/longhuguzhai3.png' }
+        { title: '佛山祖庙', image: '/images/guangfudiqu/foshanzumiao/foshanzumiao2.png' },
+        { title: '桥溪古镇', image: '/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun3.png' },
+        { title: '龙湖古寨', image: '/images/chaoshandiqu/longhuguzhai/longhuguzhai3.png' }
       ],
       features: [
-        { id: 1, title: '建筑艺术', icon: '/yuecunwenmai1/images/jianzhu/广府（珠三角）地区/灰塑.jpg', description: '建筑融合了中西风格，骑楼、碉楼、祠堂等建筑形式独具特色。' },
-        { id: 2, title: '民俗文化', icon: '/yuecunwenmai1/images/民俗文化/潮汕文化/潮剧.jpg', description: '地区保留了丰富的民俗活动，如醒狮、粤剧、龙舟赛等传统节庆。' },
-        { id: 3, title: '美食文化', icon: '/yuecunwenmai1/images/美食文化/广府美食/广式早茶文化.jpg', description: '粤菜、潮州菜、客家菜三大菜系汇聚，早茶文化、凉茶文化闻名遐迩。' }
+        { id: 1, title: '建筑艺术', icon: '/images/jianzhu/广府（珠三角）地区/灰塑.jpg', description: '建筑融合了中西风格，骑楼、碉楼、祠堂等建筑形式独具特色。' },
+        { id: 2, title: '民俗文化', icon: '/images/民俗文化/潮汕文化/潮剧.jpg', description: '地区保留了丰富的民俗活动，如醒狮、粤剧、龙舟赛等传统节庆。' },
+        { id: 3, title: '美食文化', icon: '/images/美食文化/广府美食/广式早茶文化.jpg', description: '粤菜、潮州菜、客家菜三大菜系汇聚，早茶文化、凉茶文化闻名遐迩。' }
       ],
       testimonials: [
         {
           id: 1,
           quote: '古村落让我感受到了传统文化的魅力，仿佛穿越回了古代。那些精美的雕刻和古老的建筑让我惊叹不已。',
           author: '张先生',
-          avatar: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
+          avatar: '/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
         },
         {
           id: 2,
           quote: '客家围屋的建筑智慧令人惊叹，这次旅行让我对客家文化有了更深的了解，收获颇丰。',
           author: '李小姐',
-          avatar: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
+          avatar: '/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
         },
         {
           id: 3,
           quote: '潮汕村落的民俗活动非常丰富，我体验了当地的英歌舞表演，感受到了浓厚的文化氛围。',
           author: '王先生',
-          avatar: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
+          avatar: '/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
         },
         {
           id: 4,
           quote: '广府村落的岭南园林设计精巧，每一处都透露出岭南人的生活智慧，非常值得一游。',
           author: '赵女士',
-          avatar: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
+          avatar: '/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
         },
         {
           id: 5,
           quote: '这次旅行让我对传统村落的保护有了新的认识，希望这些文化遗产能得到更好的传承。',
           author: '刘先生',
-          avatar: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
+          avatar: '/images/guangfudiqu/foshanzumiao/foshanzumiao2.png'
         }
       ],
       newsList: [
-        { id: 1, title: '文化节即将开幕', date: '2023-11-15', excerpt: '一年一度的文化节将在广州举行，展示传统手工艺和民俗表演。', image: '/yuecunwenmai1/images/特色手工艺/织染绣类/香云纱2.jpg' },
-        { id: 2, title: '古村落保护论坛召开', date: '2023-11-10', excerpt: '专家学者齐聚一堂，探讨传统村落保护与发展的新路径。', image: '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun5.png' }
+        { id: 1, title: '文化节即将开幕', date: '2023-11-15', excerpt: '一年一度的文化节将在广州举行，展示传统手工艺和民俗表演。', image: '/images/特色手工艺/织染绣类/香云纱2.jpg' },
+        { id: 2, title: '古村落保护论坛召开', date: '2023-11-10', excerpt: '专家学者齐聚一堂，探讨传统村落保护与发展的新路径。', image: '/images/guangfudiqu/songtangcun/songtangcun5.png' }
       ],
       swiperOptions: {
         modules: [Autoplay, Pagination],

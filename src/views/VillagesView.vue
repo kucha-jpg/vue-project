@@ -84,22 +84,22 @@ export default {
       activeFilter: 'all',
       villages: [
         // 潮汕村落
-        { id: 1, name: '潮州古城', category: 'chaoshan', location: '潮州市', description: '保存完好的潮州古城，拥有众多明清建筑。', image: '/yuecunwenmai1/images/chaoshandiqu/chaozhougucheng/chaozhoushi1.png', component: 'ChaozhouGuchenView' },
-        { id: 2, name: '龙湖古寨', category: 'chaoshan', location: '汕头市', description: '面向南海的古老渔村，保留传统潮汕建筑风格。', image: '/yuecunwenmai1/images/chaoshandiqu/longhuguzhai/longhuguzhai1.png', component: 'LonghuGuzhaiView' },
-        { id: 7, name: '程洋冈村', category: 'chaoshan', location: '汕头市澄海区', description: '千年古村，有"粤东襟喉、潮州门户"之称', image: '/yuecunwenmai1/images/chaoshandiqu/chengyanggang/chengyanggang1.png', component: 'ChengyanggangView' },
-        { id: 8, name: '前美村', category: 'chaoshan', location: '汕头市澄海区', description: '潮汕著名侨乡，拥有陈慈黉故居等名胜', image: '/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun3.png', component: 'QianmeiView' },
+        { id: 1, name: '潮州古城', category: 'chaoshan', location: '潮州市', description: '保存完好的潮州古城，拥有众多明清建筑。', image: '/images/chaoshandiqu/chaozhougucheng/chaozhoushi1.png', component: 'ChaozhouGuchenView' },
+        { id: 2, name: '龙湖古寨', category: 'chaoshan', location: '汕头市', description: '面向南海的古老渔村，保留传统潮汕建筑风格。', image: '/images/chaoshandiqu/longhuguzhai/longhuguzhai1.png', component: 'LonghuGuzhaiView' },
+        { id: 7, name: '程洋冈村', category: 'chaoshan', location: '汕头市澄海区', description: '千年古村，有"粤东襟喉、潮州门户"之称', image: '/images/chaoshandiqu/chengyanggang/chengyanggang1.png', component: 'ChengyanggangView' },
+        { id: 8, name: '前美村', category: 'chaoshan', location: '汕头市澄海区', description: '潮汕著名侨乡，拥有陈慈黉故居等名胜', image: '/images/chaoshandiqu/qianmeicun/qianmeicun3.png', component: 'QianmeiView' },
 
         // 广府村落
-        { id: 3, name: '佛山祖庙', category: 'guangfu', location: '佛山市', description: '以祖庙为中心的广府文化村落，建筑精美。', image: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png', component: 'FoshanZumiaoView' },
-        { id: 4, name: '沙湾古镇', category: 'guangfu', location: '广州市', description: '典型的广府水乡，保留完整的古建筑群。', image: '/yuecunwenmai1/images/guangfudiqu/shawanguzhen/shawanguzhen2.png', component: 'ShawanGuzhenView' },
-        { id: 9, name: '大岭村', category: 'guangfu', location: '广州市番禺区', description: '千年古村，有"蛎江涌头，半月古村"之称', image: '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun2.png', component: 'DalingcunView' },
-        { id: 10, name: '松塘村', category: 'guangfu', location: '佛山市南海区', description: '翰林村，因村中数百年来出了不少进士而得名', image: '/yuecunwenmai1/images/guangfudiqu/songtangcun/songtangcun2.png', component: 'SongtangcunView' },
+        { id: 3, name: '佛山祖庙', category: 'guangfu', location: '佛山市', description: '以祖庙为中心的广府文化村落，建筑精美。', image: '/images/guangfudiqu/foshanzumiao/foshanzumiao2.png', component: 'FoshanZumiaoView' },
+        { id: 4, name: '沙湾古镇', category: 'guangfu', location: '广州市', description: '典型的广府水乡，保留完整的古建筑群。', image: '/images/guangfudiqu/shawanguzhen/shawanguzhen2.png', component: 'ShawanGuzhenView' },
+        { id: 9, name: '大岭村', category: 'guangfu', location: '广州市番禺区', description: '千年古村，有"蛎江涌头，半月古村"之称', image: '/images/guangfudiqu/dalingcun/dalingcun2.png', component: 'DalingcunView' },
+        { id: 10, name: '松塘村', category: 'guangfu', location: '佛山市南海区', description: '翰林村，因村中数百年来出了不少进士而得名', image: '/images/guangfudiqu/songtangcun/songtangcun2.png', component: 'SongtangcunView' },
 
         // 客家村落
-        { id: 5, name: '雁南飞茶田', category: 'hakka', location: '梅州市', description: '客家围屋与茶田完美结合的生态村落。', image: '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian1.png', component: 'YannanfeichatianView' },
-        { id: 6, name: '桥溪古韵', category: 'hakka', location: '梅州市', description: '隐藏在深山中的客家古村落，风景秀丽。', image: '/yuecunwenmai1/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun3.png', component: 'QiaoxiguyunView' },
-        { id: 11, name: '侨乡村', category: 'hakka', location: '梅州市梅县区', description: '客家围屋博物馆，有"客家围屋之乡"的美誉', image: '/yuecunwenmai1/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun2.png', component: 'QiaoxiangcunView' },
-        { id: 12, name: '南华又庐', category: 'hakka', location: '梅州市梅县区', description: '典型的客家方形围屋，建筑规模宏大', image: '/yuecunwenmai1/images/kejiadiqu/nanhuayoulu/nanhuayoulu1.png', component: 'NanhuayouluView' }
+        { id: 5, name: '雁南飞茶田', category: 'hakka', location: '梅州市', description: '客家围屋与茶田完美结合的生态村落。', image: '/images/kejiadiqu/yannanfeichatian/yannanfeichatian1.png', component: 'YannanfeichatianView' },
+        { id: 6, name: '桥溪古韵', category: 'hakka', location: '梅州市', description: '隐藏在深山中的客家古村落，风景秀丽。', image: '/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun3.png', component: 'QiaoxiguyunView' },
+        { id: 11, name: '侨乡村', category: 'hakka', location: '梅州市梅县区', description: '客家围屋博物馆，有"客家围屋之乡"的美誉', image: '/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun2.png', component: 'QiaoxiangcunView' },
+        { id: 12, name: '南华又庐', category: 'hakka', location: '梅州市梅县区', description: '典型的客家方形围屋，建筑规模宏大', image: '/images/kejiadiqu/nanhuayoulu/nanhuayoulu1.png', component: 'NanhuayouluView' }
       ]
     }
   },
@@ -139,7 +139,7 @@ export default {
 .hero {
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url('/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao5.png') center/cover;
+  url('/images/guangfudiqu/foshanzumiao/foshanzumiao5.png') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;

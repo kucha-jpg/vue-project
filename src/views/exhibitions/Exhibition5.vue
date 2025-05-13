@@ -6,7 +6,7 @@
       <div class="header-image" :style="{ backgroundImage: 'url(' + headerImage + ')' }"></div>
       <div class="header-overlay">
         <div class="header-content">
-          <h1 class="title">广东传统生产环境展</h1>
+          <h1 class="title">广东村落自然环境展</h1>
           <p class="description">探索广东三大地区独特的生产方式与自然环境的和谐共生</p>
         </div>
       </div>
@@ -81,21 +81,21 @@ export default {
   },
   data() {
     return {
-      headerImage: "/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun11.png",
+      headerImage: "/images/guangfudiqu/dalingcun/dalingcun1.png",
       wuxingImages: [
-        "/yuecunwenmai1/images/自然环境/潮汕“五行山墙”防风防火构造/图1.jpg",
-        "/yuecunwenmai1/images/自然环境/潮汕“五行山墙”防风防火构造/图2.jpg",
-        "/yuecunwenmai1/images/自然环境/潮汕“五行山墙”防风防火构造/图3.jpg"
+        "/images/自然环境/潮汕“五行山墙”防风防火构造/图1.jpg",
+        "/images/自然环境/潮汕“五行山墙”防风防火构造/图2.jpg",
+        "/images/自然环境/潮汕“五行山墙”防风防火构造/图3.jpg"
       ],
       lengxiangImages: [
-        "/yuecunwenmai1/images/自然环境/广府村落“冷巷”通风系统/大意图.png",
-        "/yuecunwenmai1/images/自然环境/广府村落“冷巷”通风系统/冷巷示意图.png",
-        "/yuecunwenmai1/images/自然环境/广府村落“冷巷”通风系统/实地图.png",
-        "/yuecunwenmai1/images/自然环境/广府村落“冷巷”通风系统/室内冷巷.png"
+        "/images/自然环境/广府村落“冷巷”通风系统/大意图.png",
+        "/images/自然环境/广府村落“冷巷”通风系统/冷巷示意图.png",
+        "/images/自然环境/广府村落“冷巷”通风系统/实地图.png",
+        "/images/自然环境/广府村落“冷巷”通风系统/室内冷巷.png"
       ],
       baguaImages: [
-        "/yuecunwenmai1/images/自然环境/肇庆黎槎村八卦形水网/俯瞰图.png",
-        "/yuecunwenmai1/images/自然环境/肇庆黎槎村八卦形水网/古下水道.png"
+        "/images/自然环境/肇庆黎槎村八卦形水网/俯瞰图.png",
+        "/images/自然环境/肇庆黎槎村八卦形水网/古下水道.png"
       ]
     }
   }

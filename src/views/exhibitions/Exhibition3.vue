@@ -100,11 +100,11 @@ export default {
   },
   data() {
     return {
-      headerImage: "/yuecunwenmai1/images/生产环境/基塘农业系统/佛山桑基鱼塘.jpeg",
+      headerImage: "/images/生产环境/基塘农业系统/佛山桑基鱼塘.jpeg",
       jitangImages: [
-        "/yuecunwenmai1/images/生产环境/基塘农业系统/佛山桑基鱼塘.jpeg",
-        "/yuecunwenmai1/images/生产环境/基塘农业系统/佛山西樵山.jpg",
-        "/yuecunwenmai1/images/生产环境/基塘农业系统/鹤山桑基鱼塘.jpg"
+        "/images/生产环境/基塘农业系统/佛山桑基鱼塘.jpeg",
+        "/images/生产环境/基塘农业系统/佛山西樵山.jpg",
+        "/images/生产环境/基塘农业系统/鹤山桑基鱼塘.jpg"
       ],
       jitangCaptions: [
         "佛山桑基鱼塘 - 桑树与鱼塘的完美结合",
@@ -112,10 +112,10 @@ export default {
         "鹤山桑基鱼塘 - 传统生态农业模式"
       ],
       tiantianImages: [
-        "/yuecunwenmai1/images/生产环境/梯田耕作遗迹/乐昌石下.jpg",
-        "/yuecunwenmai1/images/生产环境/梯田耕作遗迹/茂名梯田.jpeg",
-        "/yuecunwenmai1/images/生产环境/梯田耕作遗迹/清远连山.jpg",
-        "/yuecunwenmai1/images/生产环境/梯田耕作遗迹/清远梯田.jpg"
+        "/images/生产环境/梯田耕作遗迹/乐昌石下.jpg",
+        "/images/生产环境/梯田耕作遗迹/茂名梯田.jpeg",
+        "/images/生产环境/梯田耕作遗迹/清远连山.jpg",
+        "/images/生产环境/梯田耕作遗迹/清远梯田.jpg"
       ],
       tiantianCaptions: [
         "乐昌石下梯田 - 层叠的田园诗画",
@@ -124,9 +124,9 @@ export default {
         "清远梯田 - 四季变换的农业景观"
       ],
       yanchangImages: [
-        "/yuecunwenmai1/images/生产环境/古盐场遗址/惠州.png",
-        "/yuecunwenmai1/images/生产环境/古盐场遗址/汕头.png",
-        "/yuecunwenmai1/images/生产环境/古盐场遗址/湛江.png"
+        "/images/生产环境/古盐场遗址/惠州.png",
+        "/images/生产环境/古盐场遗址/汕头.png",
+        "/images/生产环境/古盐场遗址/湛江.png"
       ],
       yanchangCaptions: [
         "惠州古盐田遗址 - 千年晒盐技艺的见证",

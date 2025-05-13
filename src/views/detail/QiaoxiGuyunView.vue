@@ -53,17 +53,17 @@ export default {
         category: 'meizhou',
         location: '广东省梅州市梅县区雁洋镇',
         description: '隐于群山的客家明清古村落，被誉为"广东最美客家古村落"。继善楼、世德楼等百年围龙屋群保存完好。',
-        image: '/yuecunwenmai1/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun3.png'
+        image: '/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun3.png'
       },
       images: [
-        '/yuecunwenmai1/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun1.png',
-        '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun6.png',
-        '/yuecunwenmai1/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun3.png',
-        '/yuecunwenmai1/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun4.png',
-        '/yuecunwenmai1/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun5.png',
-        '/yuecunwenmai1/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun6.png',
-        '/yuecunwenmai1/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun7.png',
-        '/yuecunwenmai1/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun8.png'
+        '/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun1.png',
+        '/images/guangfudiqu/dalingcun/dalingcun6.png',
+        '/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun3.png',
+        '/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun4.png',
+        '/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun5.png',
+        '/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun6.png',
+        '/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun7.png',
+        '/images/kejiadiqu/qiaoxiguyun/qiaoxiguyun8.png'
       ]
     }
   },

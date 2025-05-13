@@ -1,7 +1,7 @@
 <template>
   <div class="topic-detail">
     <NavBar />
-    <div class="topic-header" style="background-image: url('/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun3.png')">
+    <div class="topic-header" style="background-image: url('/images/chaoshandiqu/qianmeicun/qianmeicun3.png')">
       <button class="back-button" @click="goBack">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
           <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
@@ -29,7 +29,7 @@
           <div v-if="activeTab === 0" class="region-content">
             <h2 class="region-title">潮汕地区红色文化</h2>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/红色文化/潮汕地区/潮汕铁路旧址公园.png" alt="潮汕铁路旧址公园" class="culture-image">
+              <img src="/images/红色文化/潮汕地区/潮汕铁路旧址公园.png" alt="潮汕铁路旧址公园" class="culture-image">
               <div class="culture-text">
                 <h3>潮汕铁路旧址公园</h3>
                 <p>潮汕铁路是中国近代史上第一条由华侨投资兴建的纯商办铁路，建于1904年，全长42.1公里。1939年日军入侵潮汕时被破坏，现存部分路基和桥梁遗址。潮汕铁路旧址公园展示了潮汕人民反抗帝国主义侵略的历史见证。</p>
@@ -37,7 +37,7 @@
               </div>
             </div>
             <div class="culture-item reverse">
-              <img src="/yuecunwenmai1/images/红色文化/潮汕地区/桂园旧陈列馆.png" alt="桂园旧陈列馆" class="culture-image">
+              <img src="/images/红色文化/潮汕地区/桂园旧陈列馆.png" alt="桂园旧陈列馆" class="culture-image">
               <div class="culture-text">
                 <h3>桂园旧陈列馆</h3>
                 <p>桂园始建于1923年，是一座典型的潮汕民居建筑。1925年，东征军总指挥蒋介石和政治部主任周恩来曾在此居住和办公。1927年南昌起义军南下广东时，周恩来等起义军领导人再次入住桂园。</p>
@@ -50,7 +50,7 @@
           <div v-if="activeTab === 1" class="region-content">
             <h2 class="region-title">广府地区红色文化</h2>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/红色文化/广府地区/广州起义纪念馆.png" alt="广州起义纪念馆" class="culture-image">
+              <img src="/images/红色文化/广府地区/广州起义纪念馆.png" alt="广州起义纪念馆" class="culture-image">
               <div class="culture-text">
                 <h3>广州起义纪念馆</h3>
                 <p>广州起义纪念馆原为国民党广东省会公安局，1927年12月11日广州起义后成为广州苏维埃政府所在地。起义期间，这里张贴了第一张苏维埃政府布告，颁布了实行社会改革的纲领。</p>
@@ -58,7 +58,7 @@
               </div>
             </div>
             <div class="culture-item reverse">
-              <img src="/yuecunwenmai1/images/红色文化/广府地区/孙中山大元帅府纪念馆.png" alt="孙中山大元帅府纪念馆" class="culture-image">
+              <img src="/images/红色文化/广府地区/孙中山大元帅府纪念馆.png" alt="孙中山大元帅府纪念馆" class="culture-image">
               <div class="culture-text">
                 <h3>孙中山大元帅府纪念馆</h3>
                 <p>孙中山大元帅府前身为广东士敏土厂，1917年和1923年孙中山两次在此建立革命政权。大元帅府见证了孙中山领导护法运动和国民革命运动的重要历史时刻。</p>
@@ -66,7 +66,7 @@
               </div>
             </div>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/红色文化/广府地区/辛亥革命纪念馆.png" alt="辛亥革命纪念馆" class="culture-image">
+              <img src="/images/红色文化/广府地区/辛亥革命纪念馆.png" alt="辛亥革命纪念馆" class="culture-image">
               <div class="culture-text">
                 <h3>辛亥革命纪念馆</h3>
                 <p>辛亥革命纪念馆是为纪念孙中山领导的辛亥革命活动而建的专题纪念馆，位于广州黄埔区长洲岛。纪念馆通过大量珍贵文物和历史资料，全面展示了辛亥革命的历史进程。</p>
@@ -79,7 +79,7 @@
           <div v-if="activeTab === 2" class="region-content">
             <h2 class="region-title">客家地区红色文化</h2>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/红色文化/客家地区/梅州平远县仁居镇红军街.png" alt="梅州平远县仁居镇红军街" class="culture-image">
+              <img src="/images/红色文化/客家地区/梅州平远县仁居镇红军街.png" alt="梅州平远县仁居镇红军街" class="culture-image">
               <div class="culture-text">
                 <h3>梅州平远县仁居镇红军街</h3>
                 <p>仁居镇红军街是红四军在平远开展革命活动的重要遗址。1929年和1930年，红四军三次进入平远，在仁居镇建立了苏维埃政权，开展了土地革命斗争。</p>
@@ -87,7 +87,7 @@
               </div>
             </div>
             <div class="culture-item reverse">
-              <img src="/yuecunwenmai1/images/红色文化/客家地区/梅州平远县仁居镇红军街2.png" alt="梅州平远县仁居镇红军街2" class="culture-image">
+              <img src="/images/红色文化/客家地区/梅州平远县仁居镇红军街2.png" alt="梅州平远县仁居镇红军街2" class="culture-image">
               <div class="culture-text">
                 <h3>红军标语墙</h3>
                 <p>在仁居镇红军街的墙壁上，至今仍保留着多条红军书写的标语，如"红军是为劳苦工农谋利益的先锋队"、"只有苏维埃才能救中国"等。这些标语是研究红四军历史和宣传工作的重要实物资料。</p>
@@ -95,7 +95,7 @@
               </div>
             </div>
             <div class="culture-item">
-              <img src="/yuecunwenmai1/images/红色文化/客家地区/梅州平远县仁居镇红军街3.png" alt="梅州平远县仁居镇红军街3" class="culture-image">
+              <img src="/images/红色文化/客家地区/梅州平远县仁居镇红军街3.png" alt="梅州平远县仁居镇红军街3" class="culture-image">
               <div class="culture-text">
                 <h3>革命旧址群</h3>
                 <p>仁居镇红军街周边分布着多个革命旧址，包括平远县革命委员会旧址、红军兵工厂旧址、红军医院旧址等。这些旧址完整保留了当年的建筑风貌，展现了红军在艰苦条件下坚持斗争的革命精神。</p>

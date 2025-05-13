@@ -61,15 +61,15 @@ export default {
         category: 'chaoshan',
         location: '广东省潮州市湘桥区',
         description: '保存完好的潮州古城，拥有众多明清建筑。古城墙、牌坊街、开元寺等都是著名景点。',
-        image: '/yuecunwenmai1/images/chaoshandiqu/chaozhougucheng/chaozhoushi2.png'
+        image: '/images/chaoshandiqu/chaozhougucheng/chaozhoushi2.png'
       },
       images: [
-        '/yuecunwenmai1/images/chaoshandiqu/chaozhougucheng/chaozhoushi1.png',
-        '/yuecunwenmai1/images/chaoshandiqu/chaozhougucheng/chaozhoushi2.png',
-        '/yuecunwenmai1/images/chaoshandiqu/chaozhougucheng/chaozhoushi5.png',
-        '/yuecunwenmai1/images/chaoshandiqu/chaozhougucheng/chaozhoushi3.png',
-        '/yuecunwenmai1/images/chaoshandiqu/chaozhougucheng/chaozhoushi6.png',
-        '/yuecunwenmai1/images/chaoshandiqu/chaozhougucheng/chaozhoushi7.png'
+        '/images/chaoshandiqu/chaozhougucheng/chaozhoushi1.png',
+        '/images/chaoshandiqu/chaozhougucheng/chaozhoushi2.png',
+        '/images/chaoshandiqu/chaozhougucheng/chaozhoushi5.png',
+        '/images/chaoshandiqu/chaozhougucheng/chaozhoushi3.png',
+        '/images/chaoshandiqu/chaozhougucheng/chaozhoushi6.png',
+        '/images/chaoshandiqu/chaozhougucheng/chaozhoushi7.png'
       ]
     }
   },

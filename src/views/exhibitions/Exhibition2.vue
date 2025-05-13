@@ -7,7 +7,7 @@
       <div class="header-overlay">
         <div class="header-content">
           <h1 class="title">广东建筑营造技艺</h1>
-          <p class="description">三大地域特色交融，演绎岭南建筑艺术瑰宝</p>
+          <p class="description">三大地域特色交融，演绎建筑艺术瑰宝</p>
         </div>
       </div>
     </div>
@@ -102,17 +102,17 @@ export default {
   },
   data() {
     return {
-      headerImage: "/yuecunwenmai1/images/jianzhu/潮汕地区/嵌瓷图2.jpg",
+      headerImage: "/images/jianzhu/潮汕地区/嵌瓷图2.jpg",
       guangfuImages: [
-        "/yuecunwenmai1/images/jianzhu/广府（珠三角）地区/彩绘瓷片画.jpg",
-        "/yuecunwenmai1/images/jianzhu/广府（珠三角）地区/灰塑.jpg",
-        "/yuecunwenmai1/images/jianzhu/广府（珠三角）地区/镬耳屋山墙.jpg",
-        "/yuecunwenmai1/images/jianzhu/广府（珠三角）地区/建筑传统形制——三间两廊.png",
-        "/yuecunwenmai1/images/jianzhu/广府（珠三角）地区/麻村寅中祖楼（防御土匪的细长窗）.jpg",
-        "/yuecunwenmai1/images/jianzhu/广府（珠三角）地区/满周窗.png",
-        "/yuecunwenmai1/images/jianzhu/广府（珠三角）地区/三叠莲花托.jpg",
-        "/yuecunwenmai1/images/jianzhu/广府（珠三角）地区/趟栊门.png",
-        "/yuecunwenmai1/images/jianzhu/广府（珠三角）地区/驼峰木雕斗拱.jpg"
+        "/images/jianzhu/广府（珠三角）地区/彩绘瓷片画.jpg",
+        "/images/jianzhu/广府（珠三角）地区/灰塑.jpg",
+        "/images/jianzhu/广府（珠三角）地区/镬耳屋山墙.jpg",
+        "/images/jianzhu/广府（珠三角）地区/建筑传统形制——三间两廊.png",
+        "/images/jianzhu/广府（珠三角）地区/麻村寅中祖楼（防御土匪的细长窗）.jpg",
+        "/images/jianzhu/广府（珠三角）地区/满周窗.png",
+        "/images/jianzhu/广府（珠三角）地区/三叠莲花托.jpg",
+        "/images/jianzhu/广府（珠三角）地区/趟栊门.png",
+        "/images/jianzhu/广府（珠三角）地区/驼峰木雕斗拱.jpg"
       ],
       guangfuCaptions: [
         "彩绘瓷片画",
@@ -126,10 +126,10 @@ export default {
         "驼峰木雕斗拱"
       ],
       kejiaImages: [
-        "/yuecunwenmai1/images/jianzhu/客家地区/夯土1.jpg",
-        "/yuecunwenmai1/images/jianzhu/客家地区/夯土2.jpg",
-        "/yuecunwenmai1/images/jianzhu/客家地区/客家围楼.png",
-        "/yuecunwenmai1/images/jianzhu/客家地区/客家围楼2.png"
+        "/images/jianzhu/客家地区/夯土1.jpg",
+        "/images/jianzhu/客家地区/夯土2.jpg",
+        "/images/jianzhu/客家地区/客家围楼.png",
+        "/images/jianzhu/客家地区/客家围楼2.png"
       ],
       kejiaCaptions: [
         "夯土建筑1",
@@ -138,12 +138,12 @@ export default {
         "客家围楼2"
       ],
       chaoshanImages: [
-        "/yuecunwenmai1/images/jianzhu/潮汕地区/贝灰壁画1.jpg",
-        "/yuecunwenmai1/images/jianzhu/潮汕地区/贝灰壁画2.jpg",
-        "/yuecunwenmai1/images/jianzhu/潮汕地区/潮汕石雕.jpeg",
-        "/yuecunwenmai1/images/jianzhu/潮汕地区/潮汕石雕.jpg",
-        "/yuecunwenmai1/images/jianzhu/潮汕地区/嵌瓷图1.jpg",
-        "/yuecunwenmai1/images/jianzhu/潮汕地区/嵌瓷图2.jpg"
+        "/images/jianzhu/潮汕地区/贝灰壁画1.jpg",
+        "/images/jianzhu/潮汕地区/贝灰壁画2.jpg",
+        "/images/jianzhu/潮汕地区/潮汕石雕.jpeg",
+        "/images/jianzhu/潮汕地区/潮汕石雕.jpg",
+        "/images/jianzhu/潮汕地区/嵌瓷图1.jpg",
+        "/images/jianzhu/潮汕地区/嵌瓷图2.jpg"
       ],
       chaoshanCaptions: [
         "贝灰壁画1",

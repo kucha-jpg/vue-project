@@ -63,15 +63,15 @@ export default {
         category: 'chaoshan',
         location: '广东省汕头市澄海区隆都镇',
         description: '前美古村侨文化旅游区，拥有陈慈黉故居和永宁寨两大文化瑰宝，是潮汕历史文化的缩影。',
-        image: '/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun1.png'
+        image: '/images/chaoshandiqu/qianmeicun/qianmeicun1.png'
       },
       images: [
-        '/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun1.png',
-        '/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun2.png',
-        '/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun3.png',
-        '/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun4.png',
-        '/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun5.png',
-        '/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun6.png'
+        '/images/chaoshandiqu/qianmeicun/qianmeicun1.png',
+        '/images/chaoshandiqu/qianmeicun/qianmeicun2.png',
+        '/images/chaoshandiqu/qianmeicun/qianmeicun3.png',
+        '/images/chaoshandiqu/qianmeicun/qianmeicun4.png',
+        '/images/chaoshandiqu/qianmeicun/qianmeicun5.png',
+        '/images/chaoshandiqu/qianmeicun/qianmeicun6.png'
       ]
     }
   },

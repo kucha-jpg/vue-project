@@ -70,14 +70,14 @@ export default {
         category: 'lingnan',
         location: '广东省佛山市禅城区',
         description: '岭南地区最具代表性的古建筑群之一，被誉为"东方民间艺术之宫"。',
-        image: '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao1.png'
+        image: '/images/guangfudiqu/foshanzumiao/foshanzumiao1.png'
       },
       images: [
-        '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao1.png',
-        '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao2.png',
-        '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao3.png',
-        '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao4.png',
-        '/yuecunwenmai1/images/guangfudiqu/foshanzumiao/foshanzumiao5.png'
+        '/images/guangfudiqu/foshanzumiao/foshanzumiao1.png',
+        '/images/guangfudiqu/foshanzumiao/foshanzumiao2.png',
+        '/images/guangfudiqu/foshanzumiao/foshanzumiao3.png',
+        '/images/guangfudiqu/foshanzumiao/foshanzumiao4.png',
+        '/images/guangfudiqu/foshanzumiao/foshanzumiao5.png'
       ]
     }
   },

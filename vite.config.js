@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/yuecunwenmai1/', // 关键修改：部署路径（项目页面用仓库名，个人主页用'/'）
+  base: '/vue-project/', // 关键修改：部署路径（项目页面用仓库名，个人主页用'/'）
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')

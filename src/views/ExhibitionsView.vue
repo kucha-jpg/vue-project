@@ -47,7 +47,7 @@ export default {
     return {
       title: "广东传统村落特展",
       description: "探索传统村落的历史与文化魅力",
-      headerImage: "/yuecunwenmai1/images/chaoshandiqu/chaozhougucheng/chaozhoushi5.png",
+      headerImage: "/images/chaoshandiqu/chaozhougucheng/chaozhoushi5.png",
       exhibitions: [
         {
           id: 1,
@@ -55,7 +55,7 @@ export default {
           description: '展示广东传统村落的空间布局、风水理念和规划特点，揭示人地和谐的居住智慧。',
           date: '2023-11-01 至 2023-12-31',
           location: '广州博物馆',
-          image: '/yuecunwenmai1/images/buju/kejia/河源四角楼.jpg'
+          image: '/images/buju/kejia/河源四角楼.jpg'
         },
         {
           id: 2,
@@ -63,7 +63,7 @@ export default {
           description: '探索广东传统建筑的独特技艺，包括骑楼、镬耳屋、蚝壳墙等特色建筑形式与施工方法。',
           date: '2023-10-15 至 2023-11-15',
           location: '广东省博物馆',
-          image: '/yuecunwenmai1/images/jianzhu/潮汕地区/嵌瓷图2.jpg'
+          image: '/images/jianzhu/潮汕地区/嵌瓷图2.jpg'
         },
         {
           id: 3,
@@ -71,7 +71,7 @@ export default {
           description: '呈现广东传统村落的农业生产方式、水利设施和商贸活动，展现人民的勤劳智慧。',
           date: '2024-01-10 至 2024-03-10',
           location: '广州艺术博物院',
-          image: '/yuecunwenmai1/images/生产环境/基塘农业系统/佛山桑基鱼塘.jpeg'
+          image: '/images/生产环境/基塘农业系统/佛山桑基鱼塘.jpeg'
         },
         {
           id: 4,
@@ -79,7 +79,7 @@ export default {
           description: '展示广东村落的传统手工艺瑰宝，如广彩、广绣、石湾陶塑等精湛技艺的传承与发展。',
           date: '2024-02-01 至 2024-04-30',
           location: '广东美术馆',
-          image: '/yuecunwenmai1/images/特色手工艺/织染绣类/广绣.jpg'
+          image: '/images/特色手工艺/织染绣类/广绣.jpg'
         },
         {
           id: 5,
@@ -87,7 +87,7 @@ export default {
           description: '揭示广东传统村落与自然环境的和谐共生关系，展示水乡、山地村落的独特风貌。',
           date: '2023-12-01 至 2024-01-31',
           location: '广州饮食文化博物馆',
-          image: '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun11.png'
+          image: '/images/guangfudiqu/dalingcun/dalingcun1.png'
         }
       ]
     }

@@ -72,20 +72,20 @@ export default {
         category: 'guangzhou',
         location: '广东省广州市番禺区石楼镇',
         description: '广州保存最完好的岭南古村落之一，有"岭南第一村"之称。',
-        image: '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun1.png'
+        image: '/images/guangfudiqu/dalingcun/dalingcun1.png'
       },
       images: [
-        '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun1.png',
-        '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun2.png',
-        '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun3.png',
-        '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun4.png',
-        '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun5.png',
-        '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun6.png',
-        '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun7.png',
-        '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun8.png',
-        '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun9.png',
-        '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun10.png',
-        '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun11.png'
+        '/images/guangfudiqu/dalingcun/dalingcun1.png',
+        '/images/guangfudiqu/dalingcun/dalingcun2.png',
+        '/images/guangfudiqu/dalingcun/dalingcun3.png',
+        '/images/guangfudiqu/dalingcun/dalingcun4.png',
+        '/images/guangfudiqu/dalingcun/dalingcun5.png',
+        '/images/guangfudiqu/dalingcun/dalingcun6.png',
+        '/images/guangfudiqu/dalingcun/dalingcun7.png',
+        '/images/guangfudiqu/dalingcun/dalingcun8.png',
+        '/images/guangfudiqu/dalingcun/dalingcun9.png',
+        '/images/guangfudiqu/dalingcun/dalingcun10.png',
+        '/images/guangfudiqu/dalingcun/dalingcun11.png'
       ]
     }
   },

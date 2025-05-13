@@ -59,14 +59,14 @@ export default {
         category: 'chaoshan',
         location: '广东省潮州市潮安区龙湖镇护堤路',
         description: '始建于南宋的龙湖古寨，拥有独特的"三街六巷"格局和丰富的潮汕建筑文化。',
-        image: '/yuecunwenmai1/images/chaoshandiqu/longhuguzhai/longhuguzhai1.png'
+        image: '/images/chaoshandiqu/longhuguzhai/longhuguzhai1.png'
       },
       images: [
-        '/yuecunwenmai1/images/chaoshandiqu/longhuguzhai/longhuguzhai1.png',
-        '/yuecunwenmai1/images/chaoshandiqu/longhuguzhai/longhuguzhai2.png',
-        '/yuecunwenmai1/images/chaoshandiqu/longhuguzhai/longhuguzhai3.png',
-        '/yuecunwenmai1/images/chaoshandiqu/longhuguzhai/longhuguzhai4.png',
-        '/yuecunwenmai1/images/chaoshandiqu/longhuguzhai/longhuguzhai5.png'
+        '/images/chaoshandiqu/longhuguzhai/longhuguzhai1.png',
+        '/images/chaoshandiqu/longhuguzhai/longhuguzhai2.png',
+        '/images/chaoshandiqu/longhuguzhai/longhuguzhai3.png',
+        '/images/chaoshandiqu/longhuguzhai/longhuguzhai4.png',
+        '/images/chaoshandiqu/longhuguzhai/longhuguzhai5.png'
       ]
     }
   },

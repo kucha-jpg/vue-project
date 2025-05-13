@@ -61,14 +61,14 @@ export default {
         category: 'meizhou',
         location: '广东省梅州市梅县区南口镇',
         description: '拥有500多年历史的客家古村落，以华侨文化和客家建筑闻名。',
-        image: '/yuecunwenmai1/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun2.png'
+        image: '/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun2.png'
       },
       images: [
-        '/yuecunwenmai1/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun1.png',
-        '/yuecunwenmai1/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun2.png',
-        '/yuecunwenmai1/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun3.png',
-        '/yuecunwenmai1/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun4.png',
-        '/yuecunwenmai1/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun5.png'
+        '/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun1.png',
+        '/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun2.png',
+        '/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun3.png',
+        '/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun4.png',
+        '/images/kejiadiqu/qiaoxiangcun/qiaoxiangcun5.png'
       ]
     }
   },

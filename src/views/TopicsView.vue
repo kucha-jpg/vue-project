@@ -50,43 +50,43 @@ export default {
         {
           id: 1,
           title: '方言音律',
-          description: '聆听岭南各地的方言歌谣，感受独特的语音魅力',
-          image: '/yuecunwenmai1/images/chaoshandiqu/longhuguzhai/longhuguzhai2.png',
+          description: '聆听各地的方言歌谣，感受独特的语音魅力',
+          image: '/images/chaoshandiqu/longhuguzhai/longhuguzhai2.png',
           path: '/dialect'
         },
         {
           id: 2,
           title: '红色文化',
           description: '追寻广东革命足迹，传承红色基因',
-          image: '/yuecunwenmai1/images/chaoshandiqu/qianmeicun/qianmeicun3.png',
+          image: '/images/chaoshandiqu/qianmeicun/qianmeicun3.png',
           path: '/red-culture'
         },
         {
           id: 3,
           title: '节日文化',
-          description: '体验岭南传统节庆，感受民俗风情',
-          image: '/yuecunwenmai1/images/guangfudiqu/shawanguzhen/shawanguzhen3.png',
+          description: '体验传统节庆，感受民俗风情',
+          image: '/images/guangfudiqu/shawanguzhen/shawanguzhen3.png',
           path: '/festival'
         },
         {
           id: 4,
           title: '美食文化',
-          description: '品味岭南特色美食，探索饮食文化根源',
-          image: '/yuecunwenmai1/images/美食文化/客家美食/酿豆腐.png',
+          description: '品味特色美食，探索饮食文化根源',
+          image: '/images/美食文化/客家美食/酿豆腐.png',
           path: '/food-culture'
         },
         {
           id: 5,
           title: '民俗文化',
-          description: '了解岭南传统民俗，感受乡土风情',
-          image: '/yuecunwenmai1/images/guangfudiqu/dalingcun/dalingcun6.png',
+          description: '了解传统民俗，感受乡土风情',
+          image: '/images/guangfudiqu/dalingcun/dalingcun6.png',
           path: '/folk-culture'
         },
         {
           id: 6,
           title: '信仰文化',
-          description: '探秘岭南宗教信仰，理解多元文化融合',
-          image: '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian2.png',
+          description: '探秘宗教信仰，理解多元文化融合',
+          image: '/images/kejiadiqu/yannanfeichatian/yannanfeichatian2.png',
           path: '/belief-culture'
         }
       ]
@@ -109,7 +109,7 @@ export default {
 .page-header {
   height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url('/yuecunwenmai1/images/guangfudiqu/shawanguzhen/shawanguzhen1.png') center/cover;
+  url('/images/guangfudiqu/shawanguzhen/shawanguzhen1.png') center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;

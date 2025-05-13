@@ -47,15 +47,15 @@ export default {
   data() {
     return {
       images: [
-        '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian1.png',
-        '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian2.png',
-        '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian3.png',
-        '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian4.png',
-        '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian5.png',
-        '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian6.png',
-        '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian7.png',
-        '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian8.png',
-        '/yuecunwenmai1/images/kejiadiqu/yannanfeichatian/yannanfeichatian9.png'
+        '/images/kejiadiqu/yannanfeichatian/yannanfeichatian1.png',
+        '/images/kejiadiqu/yannanfeichatian/yannanfeichatian2.png',
+        '/images/kejiadiqu/yannanfeichatian/yannanfeichatian3.png',
+        '/images/kejiadiqu/yannanfeichatian/yannanfeichatian4.png',
+        '/images/kejiadiqu/yannanfeichatian/yannanfeichatian5.png',
+        '/images/kejiadiqu/yannanfeichatian/yannanfeichatian6.png',
+        '/images/kejiadiqu/yannanfeichatian/yannanfeichatian7.png',
+        '/images/kejiadiqu/yannanfeichatian/yannanfeichatian8.png',
+        '/images/kejiadiqu/yannanfeichatian/yannanfeichatian9.png'
       ]
     }
   },
