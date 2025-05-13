@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://kucha-jpg.github.io/yuecunwenmai1",
+  "homepage": "https://kucha-jpg.github.io/vue-project",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --fix",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --repo https://github.com/kucha-jpg/yuecunwenmai1.git"
+    "deploy": "gh-pages -d dist --repo https://github.com/kucha-jpg/vue-project.git"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
