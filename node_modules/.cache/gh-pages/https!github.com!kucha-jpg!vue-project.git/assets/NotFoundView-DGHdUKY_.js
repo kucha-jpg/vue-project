@@ -1,0 +1,1 @@
+import{_ as o,c as t,d as n,o as s}from"./index-BQyouPzZ.js";const r={name:"NotFoundView"};function a(c,e,d,l,p,u){return s(),t("div",null,e[0]||(e[0]=[n("h1",null,"404",-1)]))}const _=o(r,[["render",a]]);export{_ as default};
